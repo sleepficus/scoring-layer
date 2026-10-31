@@ -1,0 +1,758 @@
+{
+  "audit_role": "Independent checker; built none of audited code",
+  "checks": [
+    {
+      "details": null,
+      "name": "recorded-live-complete-validation",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "raw-response-byte-hash-and-size",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "recorded-request-has-no-authorization",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "recorded-request-fixed-read-options",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "live-missing-tokens-remain-unknown",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "live-unknown-token-cost-is-unverifiable",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "capture is BLOCKED; cannot score partial/blocked evidence"
+      },
+      "name": "blocked-packet",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "capture is INCOMPLETE; cannot score partial/blocked evidence"
+      },
+      "name": "incomplete-packet",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "capture is COMPLETE; cannot score partial/blocked evidence"
+      },
+      "name": "error-bearing-complete-packet",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "live response receipt hash/size mismatch"
+      },
+      "name": "response-hash-tamper",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "live response receipt hash/size mismatch"
+      },
+      "name": "response-size-tamper",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "normalized live fetch differs from captured provider response"
+      },
+      "name": "normalized-markdown-tamper",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "normalized live fetch differs from captured provider response"
+      },
+      "name": "normalized-spend-tamper",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: tokensUsed None needs UNKNOWN status"
+      },
+      "name": "unknown-spend-without-status",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "live request endpoint/method/headers changed"
+      },
+      "name": "authorization-injected",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "capture is not keyless free-only"
+      },
+      "name": "paid-route-injected",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "capture is not keyless free-only"
+      },
+      "name": "retry-injected",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "live request endpoint/method/headers changed"
+      },
+      "name": "request-endpoint-injected",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "run identity/answer differs from captured request plan"
+      },
+      "name": "capture-answer-changed",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "run citations differs from captured request plan"
+      },
+      "name": "capture-citations-changed",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "run judge_decisions differs from captured request plan"
+      },
+      "name": "judge-row-added-after-capture",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "run/card start timestamps differ from original capture_started_at"
+      },
+      "name": "run-start-changed",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "run/card start timestamps differ from original capture_started_at"
+      },
+      "name": "seal-time-changed",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "live receipt timestamps are out of capture order"
+      },
+      "name": "receipt-before-preseal",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "live receipt timestamps are out of capture order"
+      },
+      "name": "response-after-capture",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "live task card seal does not match captured criteria"
+      },
+      "name": "card-goalpost-changed",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "live capture needs one complete run and one receipt per requested read"
+      },
+      "name": "receipt-omitted",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "live receipt identity/origin mismatch"
+      },
+      "name": "live-label-downgrade-without-receipt-change",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'creditsUsed' must be a non-negative finite number, got -1"
+      },
+      "name": "provider-creditsUsed-negative",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'creditsUsed' must be a non-negative finite number, got nan"
+      },
+      "name": "provider-creditsUsed-nan",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'creditsUsed' must be a non-negative finite number, got inf"
+      },
+      "name": "provider-creditsUsed-infinity",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'creditsUsed' must be a number, got True"
+      },
+      "name": "provider-creditsUsed-boolean",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'creditsUsed' must be a number, got '0'"
+      },
+      "name": "provider-creditsUsed-string",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'tokensUsed' must be a non-negative finite number, got -1"
+      },
+      "name": "provider-tokensUsed-negative",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'tokensUsed' must be a non-negative finite number, got nan"
+      },
+      "name": "provider-tokensUsed-nan",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'tokensUsed' must be a non-negative finite number, got inf"
+      },
+      "name": "provider-tokensUsed-infinity",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'tokensUsed' must be a number, got True"
+      },
+      "name": "provider-tokensUsed-boolean",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://example.com/: 'tokensUsed' must be a number, got '0'"
+      },
+      "name": "provider-tokensUsed-string",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "session11-original-chain-verifies",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "recovered-task-card-equals-recorded-card",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "recovered-human-decisions-equal-recorded-decisions",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "different_keys": [
+            "claims_note"
+          ],
+          "run_id": "run-synthetic-clean"
+        },
+        {
+          "different_keys": [
+            "claims_note"
+          ],
+          "run_id": "run-synthetic-failures"
+        }
+      ],
+      "name": "recovered-run-evidence-equals-recorded-evidence",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "F3-real-five-decisions-validate-and-precision-80",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "F6-precision-every-decision-has-seq-and-note",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "invalid precision decision(s): decision #6: references flag 'never-emitted', which no grader emitted"
+      },
+      "name": "F3-orphan-decision",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "invalid precision decision(s): decision #6: duplicate decision for flag 'run-synthetic-failures:fetch-truth:1' \u2014 each flag may be decided at most once"
+      },
+      "name": "F3-duplicate-decision",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "invalid precision decision(s): decision #1: grader 'unknown' does not match flag 'run-synthetic-failures:fetch-truth:1''s grader 'fetch-truth'"
+      },
+      "name": "F3-wrong-grader-decision",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "invalid precision decision(s): decision #1: each decision needs a 'flag_id'"
+      },
+      "name": "F3-missing-flag-decision",
+      "pass": true
+    },
+    {
+      "details": {
+        "error": null,
+        "first_bad_seq": 10,
+        "ok": false,
+        "records": 10
+      },
+      "name": "F1-type-tamper-rejected",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "argv": [
+            "precision-demo",
+            "--chain",
+            "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-type.jsonl"
+          ],
+          "exit": 1,
+          "stderr": "ERROR: precision-demo: chain verification failed (first_bad_seq=10) \u2014 refusing to produce a score from unverified evidence\n",
+          "stdout": ""
+        },
+        {
+          "argv": [
+            "run",
+            "--session1",
+            "--chain",
+            "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-type.jsonl"
+          ],
+          "exit": 1,
+          "stderr": "ERROR: run: chain verification failed (first_bad_seq=10) \u2014 refusing to produce a score from unverified evidence\n",
+          "stdout": ""
+        }
+      ],
+      "name": "F2-type-tamper-no-score-no-append",
+      "pass": true
+    },
+    {
+      "details": {
+        "error": null,
+        "first_bad_seq": 10,
+        "ok": false,
+        "records": 10
+      },
+      "name": "F1-timestamp-tamper-rejected",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "argv": [
+            "precision-demo",
+            "--chain",
+            "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-timestamp.jsonl"
+          ],
+          "exit": 1,
+          "stderr": "ERROR: precision-demo: chain verification failed (first_bad_seq=10) \u2014 refusing to produce a score from unverified evidence\n",
+          "stdout": ""
+        },
+        {
+          "argv": [
+            "run",
+            "--session1",
+            "--chain",
+            "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-timestamp.jsonl"
+          ],
+          "exit": 1,
+          "stderr": "ERROR: run: chain verification failed (first_bad_seq=10) \u2014 refusing to produce a score from unverified evidence\n",
+          "stdout": ""
+        }
+      ],
+      "name": "F2-timestamp-tamper-no-score-no-append",
+      "pass": true
+    },
+    {
+      "details": {
+        "error": null,
+        "first_bad_seq": 10,
+        "ok": false,
+        "records": 10
+      },
+      "name": "F1-payload-tamper-rejected",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "argv": [
+            "precision-demo",
+            "--chain",
+            "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-payload.jsonl"
+          ],
+          "exit": 1,
+          "stderr": "ERROR: precision-demo: chain verification failed (first_bad_seq=10) \u2014 refusing to produce a score from unverified evidence\n",
+          "stdout": ""
+        },
+        {
+          "argv": [
+            "run",
+            "--session1",
+            "--chain",
+            "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-payload.jsonl"
+          ],
+          "exit": 1,
+          "stderr": "ERROR: run: chain verification failed (first_bad_seq=10) \u2014 refusing to produce a score from unverified evidence\n",
+          "stdout": ""
+        }
+      ],
+      "name": "F2-payload-tamper-no-score-no-append",
+      "pass": true
+    },
+    {
+      "details": {
+        "error": null,
+        "first_bad_seq": 11,
+        "ok": false,
+        "records": 10
+      },
+      "name": "F1-sequence-tamper-rejected",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "argv": [
+            "precision-demo",
+            "--chain",
+            "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-sequence.jsonl"
+          ],
+          "exit": 1,
+          "stderr": "ERROR: precision-demo: chain verification failed (first_bad_seq=11) \u2014 refusing to produce a score from unverified evidence\n",
+          "stdout": ""
+        },
+        {
+          "argv": [
+            "run",
+            "--session1",
+            "--chain",
+            "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-sequence.jsonl"
+          ],
+          "exit": 1,
+          "stderr": "ERROR: run: chain verification failed (first_bad_seq=11) \u2014 refusing to produce a score from unverified evidence\n",
+          "stdout": ""
+        }
+      ],
+      "name": "F2-sequence-tamper-no-score-no-append",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "F1-old-chain-format-rejected",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "refusing to append: old chain format at seq 1: hash_version is None, expected 2; chains written under the v1 hash formula cannot be verified \u2014 regenerate the chain through the CLI's seal/run flow"
+      },
+      "name": "F1-old-chain-append-refused",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://widgetforge.invalid/pricing: missing required spend field 'creditsUsed' \u2014 refusing to substitute zero for missing data"
+      },
+      "name": "F4-fixture-missing-credits-rejected",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://widgetforge.invalid/pricing: missing required spend field 'tokensUsed' \u2014 refusing to substitute zero for missing data"
+      },
+      "name": "F4-fixture-missing-tokens-rejected",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://widgetforge.invalid/docs/limits: 'creditsUsed' must be a non-negative finite number, got -100"
+      },
+      "name": "F4-fixture-negative-cancellation-rejected",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://widgetforge.invalid/pricing: 'creditsUsed' must be a non-negative finite number, got nan"
+      },
+      "name": "F4-fixture-nonfinite-credits-rejected",
+      "pass": true
+    },
+    {
+      "details": {
+        "exception": "ValueError",
+        "message": "fetch https://widgetforge.invalid/pricing: 'tokensUsed' must be a number, got True"
+      },
+      "name": "F4-fixture-boolean-tokens-rejected",
+      "pass": true
+    },
+    {
+      "details": {
+        "argv": [
+          "run",
+          "--session1",
+          "--pack",
+          "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-orphan.json",
+          "--chain",
+          "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-orphan.jsonl"
+        ],
+        "exit": 1,
+        "stderr": "ERROR: invalid precision decision(s): decision #6: references flag 'never-emitted', which no grader emitted\n",
+        "stdout": ""
+      },
+      "name": "F3-orphan-CLI-no-score-no-chain-created",
+      "pass": true
+    },
+    {
+      "details": {
+        "argv": [
+          "run",
+          "--pack",
+          "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-BLOCKED.json",
+          "--chain",
+          "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-BLOCKED.jsonl"
+        ],
+        "exit": 1,
+        "stderr": "ERROR: capture is BLOCKED; cannot score partial/blocked evidence\n",
+        "stdout": ""
+      },
+      "name": "capture-BLOCKED-CLI-no-score-no-chain-created",
+      "pass": true
+    },
+    {
+      "details": {
+        "argv": [
+          "run",
+          "--pack",
+          "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-forged-normalization.json",
+          "--chain",
+          "/Users/carrie/my-project/scoring-layer-session2/receipts/audit/helper-capture-chain-work-hv1_nvj1/helper-forged-normalization.jsonl"
+        ],
+        "exit": 1,
+        "stderr": "ERROR: normalized live fetch differs from captured provider response\n",
+        "stdout": ""
+      },
+      "name": "capture-forged-normalization-CLI-no-score-no-chain-created",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "F5-complete-seal-envelope-verifies",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "F5-missing-sealed_at-rejected",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "F5-missing-seal_algorithm-rejected",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "F5-card-edit-invalidates-seal",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "F7-progress-task-owner-corrected",
+      "pass": true
+    },
+    {
+      "details": null,
+      "name": "source-and-original-evidence-unchanged",
+      "pass": true
+    }
+  ],
+  "checks_passed": 72,
+  "checks_total": 72,
+  "findings": [
+    {
+      "cost_flags": 0,
+      "exit": 0,
+      "freshness_flags": 0,
+      "id": "H-CAP-1",
+      "impact": "Malformed data pack admitted as sealed criteria: the known seven-hour stale fixture loses its freshness flag. Not observed in supplied valid live/demo packs; no paid route or real spend was used.",
+      "repro_command": "PYTHONDONTWRITEBYTECODE=1 python3.12 -m scoring.cli run --session1 --pack receipts/audit/helper-invalid-bound-repro.json --chain /a/new/chain/path.jsonl",
+      "root_cause": "scoring/sealing.py validate_card checks freshness <=0 without math.isfinite; NaN is numeric and NaN <=0 is false. json.loads accepts NaN and age_hours > NaN is false in scoring/graders.py.",
+      "seal_verifies": true,
+      "severity": "MEDIUM",
+      "title": "NaN freshness criterion seals successfully and disables stale-cache check",
+      "total_credits": 2
+    }
+  ],
+  "live_capture": {
+    "capture_finished_at": "2026-10-28T04:16:31.981304Z",
+    "capture_started_at": "2026-10-28T04:16:31.650565Z",
+    "file_sha256": "63edd1c8ee1555e474b39250a17f8d817166f52245daeb4674a92e4ad9d4cfac",
+    "free_tier": {
+      "authorization_sent": false,
+      "automatic_retries": 0,
+      "basis_checked_at": "2026-10-28",
+      "paid_fallback": false,
+      "route": "KEYLESS",
+      "source_urls": [
+        "https://docs.firecrawl.dev/rate-limits#keyless-no-api-key",
+        "https://docs.firecrawl.dev/capabilities",
+        "https://docs.firecrawl.dev/api-reference/endpoint/scrape"
+      ]
+    },
+    "receipts": [
+      {
+        "http_status": 200,
+        "outcome": "HTTP_RESPONSE",
+        "request_url": "https://api.firecrawl.dev/v2/scrape",
+        "requested_url": "https://example.com/",
+        "response_bytes": 1807,
+        "response_sha256": "a71109267a1c99c98a2d5f0875aad0bacd286b7024b7bd2a5a660fed4249cfa3",
+        "transport": "urllib-http"
+      }
+    ],
+    "spend": [
+      {
+        "creditsUsed": 1,
+        "spend_sources": {
+          "creditsUsed": [
+            "response.data.metadata.creditsUsed"
+          ],
+          "tokensUsed": []
+        },
+        "spend_status": {
+          "creditsUsed": "PROVIDER_REPORTED",
+          "tokensUsed": "UNKNOWN"
+        },
+        "tokensUsed": null,
+        "tokens_scope": "provider-reported scrape tokens only; agent generation tokens UNKNOWN"
+      }
+    ]
+  },
+  "network_calls": 0,
+  "new_capture_calls": 0,
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "probe_sha256": "a9a2df4f9e9cb8a2d157baf1f62c05e3f338b94593ba57ec44c1b680a7623766",
+  "questions_for_Stephen": [],
+  "reconstructed_run_deltas": [
+    {
+      "different_keys": [
+        "claims_note"
+      ],
+      "run_id": "run-synthetic-clean"
+    },
+    {
+      "different_keys": [
+        "claims_note"
+      ],
+      "run_id": "run-synthetic-failures"
+    }
+  ],
+  "runtime": "3.12.7 (main, Jul 11 2026, 00:44:18) [Clang 14.0.3 (clang-1403.0.22.14.1)]",
+  "source_sha256_after": {
+    "data/chain.jsonl": "a4be29b831c6b1d4302b319c9623476491290b528ca68543a933367098a6fa4a",
+    "fixtures/synthetic_firecrawl.json": "5a347fbd509b92c1ef76ec25c5c4e36e3011d35e56ddddd3b3c06f73dc005076",
+    "receipts/live-keyless-capture.json": "63edd1c8ee1555e474b39250a17f8d817166f52245daeb4674a92e4ad9d4cfac",
+    "scoring/__init__.py": "e0b007876df111c5676987a819341b8f2f28bcd6d12e4e71106fd4d52fe3b86b",
+    "scoring/capture.py": "5337ca59ec3def3d5bb8b1da7edd1d6de8834ff76c26931c027e47195432fe1e",
+    "scoring/chain.py": "9355aa4a2a7c230bd79e0466e2e786cbce6fd5d3240cf3aedd3aff2d4aaeb947",
+    "scoring/claims.py": "9179ae9eea4c913872758b7ca25381f2de9117e92f3c936f0f64543004596b7d",
+    "scoring/cli.py": "d9ef615287a00383da32b4482531eed4383146e4cb7e7b93b0234779bc9d1304",
+    "scoring/graders.py": "7c0c9622700ca92b78daa48a50026bb957caa22426d8559647ca13d7cf81acf7",
+    "scoring/live.py": "2cb82ed03f7f7c36446cc35a781f15230de3ff77247be8071d2808c89b03b022",
+    "scoring/precision.py": "fabf2f7ffbf8a4695380769e596cb5579938e5e084db5778addd840ec2e227ed",
+    "scoring/scorecard.py": "1fdd54fb8bf0b53da3bf887ae3287becbe62821b99a1b325fff5c101fb555e8f",
+    "scoring/sealing.py": "b1441e22eae3dc4d345a22a28baf72fa5f66a58ad25c538da40edce33af3d247"
+  },
+  "source_sha256_before": {
+    "data/chain.jsonl": "a4be29b831c6b1d4302b319c9623476491290b528ca68543a933367098a6fa4a",
+    "fixtures/synthetic_firecrawl.json": "5a347fbd509b92c1ef76ec25c5c4e36e3011d35e56ddddd3b3c06f73dc005076",
+    "receipts/live-keyless-capture.json": "63edd1c8ee1555e474b39250a17f8d817166f52245daeb4674a92e4ad9d4cfac",
+    "scoring/__init__.py": "e0b007876df111c5676987a819341b8f2f28bcd6d12e4e71106fd4d52fe3b86b",
+    "scoring/capture.py": "5337ca59ec3def3d5bb8b1da7edd1d6de8834ff76c26931c027e47195432fe1e",
+    "scoring/chain.py": "9355aa4a2a7c230bd79e0466e2e786cbce6fd5d3240cf3aedd3aff2d4aaeb947",
+    "scoring/claims.py": "9179ae9eea4c913872758b7ca25381f2de9117e92f3c936f0f64543004596b7d",
+    "scoring/cli.py": "d9ef615287a00383da32b4482531eed4383146e4cb7e7b93b0234779bc9d1304",
+    "scoring/graders.py": "7c0c9622700ca92b78daa48a50026bb957caa22426d8559647ca13d7cf81acf7",
+    "scoring/live.py": "2cb82ed03f7f7c36446cc35a781f15230de3ff77247be8071d2808c89b03b022",
+    "scoring/precision.py": "fabf2f7ffbf8a4695380769e596cb5579938e5e084db5778addd840ec2e227ed",
+    "scoring/scorecard.py": "1fdd54fb8bf0b53da3bf887ae3287becbe62821b99a1b325fff5c101fb555e8f",
+    "scoring/sealing.py": "b1441e22eae3dc4d345a22a28baf72fa5f66a58ad25c538da40edce33af3d247"
+  }
+}
