@@ -1,0 +1,8 @@
+Precision from verified chain verdicts and queue_decision records:
+DETERMINISTIC REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  cost-truth: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+JUDGE REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 0 pending)

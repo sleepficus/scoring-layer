@@ -1,0 +1,58 @@
+Session 2 claim-support pipeline
+Task card sealed: a77d6226071fb5b7d7b8413b5d25694c78bb1f5af639a333b56e7019d275ad02
+  appended to chain as seq 1
+
+========================================================================
+SCORING LAYER — RUN SCORECARD
+DATA: LIVE CAPTURE — captured provider fields; UNKNOWN means unreported evidence.
+Run:        run-live-keyless-20261028  (agent: Session 2 coordinator supplied verification sentence; no autonomous agent loop)
+Task card:  live-keyless-example-domain-20261028 — One real keyless free Firecrawl capture probe
+Card seal:  a77d6226071fb5b7d7b8413b5d25694c78bb1f5af639a333b56e7019d275ad02  (sealed 2026-10-28T04:16:31.650565Z)
+Started at: 2026-10-28T04:16:31.650565Z
+Chain:      task_card seq 1, run seq 2, verdicts seq 3
+Flags: DETERMINISTIC 1; JUDGE 0 (each receipt below; no composite score)
+
+-- Fetch truth (grader: fetch-truth) --
+Relied-on fetches: 1 of 1 total; flags: 0
+
+-- Freshness (grader: freshness) --
+Sealed freshness bound: 24h; flags: 0
+
+-- Completeness (grader: completeness) --
+Required elements: 1; present: 1; missing: 0; flags: 0
+  q1: present=['documentation examples']
+  q1: missing=[]
+
+-- Cost truth (grader: cost-truth) --
+Credits spent: 1 (bound 1); tokens spent: UNKNOWN (bound 0)
+Historical Session 1 denominator — required elements found in consumed content: 1 of 1; credits per present element: 1.0; tokens per present element: n/a
+  https://example.com/: 1 credits, n/a tokens
+Captured fetch spend only; answer-generation tokens and any separate judge-seat cost are UNKNOWN.
+  DETERMINISTIC supported-claim denominator: 1; credits per supported claim: 1.0; tokens per supported claim: n/a
+  JUDGE supported-claim denominator: 0; credits per supported claim: n/a; tokens per supported claim: n/a
+Flags: 1
+  FLAG run-live-keyless-20261028:cost-truth:1
+    criterion: Captured spend must be known to verify the sealed cost bound; unknown metering is UNVERIFIABLE, never zero or a pass.
+    subject:   run-live-keyless-20261028
+    evidence:  {"cost_bound": {"max_credits": 1, "max_tokens": 0}, "credits_per_verified_fact": 1.0, "per_fetch": [{"creditsUsed": 1, "tokensUsed": null, "url": "https://example.com/"}], "required_facts": 1, "status": "UNVERIFIABLE", "tokens_per_verified_fact": null, "total_credits": 1, "total_tokens": null, "unknown_units": ["tokens"], "verified_facts": 1}
+
+-- Claim support (grader: claim-support) --
+DETERMINISTIC: 1 SUPPORTED; 0 UNSUPPORTED; 0 CONTRADICTED; 1 total
+JUDGE: 0 SUPPORTED; 0 UNSUPPORTED; 0 CONTRADICTED; 0 total
+Extraction receipt: {"limits": ["Rule-based prose candidates, not a claim-completeness guarantee; tables, ellipsis, pronouns, multilingual text and nested assertions may need review.", "Unresolved semantics are UNSUPPORTED by deterministic checks, not a proof that no passage entails the claim; needs_judge identifies this residue.", "Explicit inline/reference citations or a run citation map are required; question assignment and relied_on do not invent citations."], "method": "rule-based-v1"}
+  DETERMINISTIC run-live-keyless-20261028:claim:1: SUPPORTED
+    answer: This domain is for use in documentation examples without needing permission.
+    answer span: {"end": 76, "start": 0}; answer SHA-256: bcd754015a0124b81fb840bf28e8756a135b3c09522390cf91e3b8671afec9e0
+    citations: [{"reference": "[1]", "url": "https://example.com/"}]
+    reason: Complete statement or narrow subject/relation/value assertion matches a cited captured passage.
+    passage receipt: {"document_sha256": "cd43b41e401fc45699d482a03cb5c960ecaf948f0e486cbfb68f0122582e45c8", "end": 76, "fetch_index": 0, "start": 0, "text": "This domain is for use in documentation examples without needing permission.", "url": "https://example.com/"}
+========================================================================
+DETERMINISTIC REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  cost-truth: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+JUDGE REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 0 pending)
+
+Chain after run: 3 records, verify ok=True
