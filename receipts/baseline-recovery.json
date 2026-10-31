@@ -1,0 +1,17 @@
+{
+  "source": "attached scoring-layer/data/chain.jsonl",
+  "source_sha256": "a4be29b831c6b1d4302b319c9623476491290b528ca68543a933367098a6fa4a",
+  "chain_verification": {
+    "ok": true,
+    "records": 10,
+    "first_bad_seq": null,
+    "error": null
+  },
+  "source_zip_sha256": "a293743859b4811ed821afe522b75013b055d60de04c038b927b59d629407ede",
+  "normalized_runs_equal": true,
+  "task_card_equal": true,
+  "human_decisions_equal": true,
+  "recovered_fixture_sha256": "5a347fbd509b92c1ef76ec25c5c4e36e3011d35e56ddddd3b3c06f73dc005076",
+  "original_fixture_bytes": "UNAVAILABLE in attached ZIP; recovered loader-equivalent synthetic wrapper, not original bytes",
+  "tests_exit": 0
+}
