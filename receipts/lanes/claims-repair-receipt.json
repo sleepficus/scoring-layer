@@ -1,0 +1,95 @@
+{
+  "status": "REPAIRED_BUILDER_TESTED_SELF_REVIEWED_AWAITING_INDEPENDENT_CLOSURE",
+  "findings": [
+    "A1",
+    "A2",
+    "A3",
+    "A4"
+  ],
+  "python": "3.12.7 (main, Jul 11 2026, 00:44:18) [Clang 14.0.3 (clang-1403.0.22.14.1)]",
+  "commands": [
+    {
+      "name": "targeted",
+      "command": [
+        "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+        "-m",
+        "unittest",
+        "tests.test_claims",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "receipts/lanes/claims-repair-targeted.log"
+    },
+    {
+      "name": "auditor-probes",
+      "command": [
+        "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+        "receipts/audit/claim_adversarial_probes.py"
+      ],
+      "exit_code": 0,
+      "log": "receipts/lanes/claims-repair-auditor-probes.log"
+    },
+    {
+      "name": "full-suite",
+      "command": [
+        "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "receipts/lanes/claims-repair-full-suite.log"
+    },
+    {
+      "name": "cli-demo",
+      "command": [
+        "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+        "-m",
+        "scoring.cli",
+        "run",
+        "--pack",
+        "fixtures/session2_claim_support.json",
+        "--chain",
+        "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/claims-repair-cli-8rvi5tgo/chain.jsonl"
+      ],
+      "exit_code": 0,
+      "log": "receipts/lanes/claims-repair-cli-demo.log"
+    },
+    {
+      "name": "cli-verify",
+      "command": [
+        "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+        "-m",
+        "scoring.cli",
+        "verify",
+        "--chain",
+        "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/claims-repair-cli-8rvi5tgo/chain.jsonl"
+      ],
+      "exit_code": 0,
+      "log": "receipts/lanes/claims-repair-cli-verify.log"
+    },
+    {
+      "name": "cli-a1",
+      "command": [
+        "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+        "-m",
+        "scoring.cli",
+        "run",
+        "--pack",
+        "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/claims-repair-cli-8rvi5tgo/a1-pack.json",
+        "--chain",
+        "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/claims-repair-cli-8rvi5tgo/a1-chain.jsonl"
+      ],
+      "exit_code": 0,
+      "log": "receipts/lanes/claims-repair-cli-a1.log"
+    }
+  ],
+  "source_hashes": {
+    "scoring/claims.py": "2dee67761a3091dd0b655f114e1cd34158cd2cb3455e406263c85e8a46aa2656",
+    "tests/test_claims.py": "4b7a27cfeb300b9759504c81f65b5cfed9d293abc4920c3e76d9da1698681515"
+  },
+  "questions_for_stephen": []
+}
