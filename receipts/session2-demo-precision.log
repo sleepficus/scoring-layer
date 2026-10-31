@@ -1,0 +1,12 @@
+Precision from verified chain verdicts and queue_decision records (SYNTHETIC fixture demonstration; invented review decisions):
+DETERMINISTIC REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  claim-support: precision 66.7% (2 confirmed, 1 killed, 0 pending)
+  OVERALL: precision 66.7% (2 confirmed, 1 killed, 0 pending)
+  Decision receipts:
+    - run-synthetic-session2:claim:3:claim-support · grader claim-support · confirm · chain seq 4 · note: SYNTHETIC demonstration decision: the source states $49, contradicting $59.
+    - run-synthetic-session2:claim:4:claim-support · grader claim-support · confirm · chain seq 5 · note: SYNTHETIC demonstration decision: the cited limits page contains no offline-mode statement.
+    - run-synthetic-session2:claim:5:claim-support · grader claim-support · kill · chain seq 6 · note: SYNTHETIC planted grader-error decision: monthly means per month; the conservative matcher missed this supported wording. This invented kill lowers demo precision and is not an actual human review.
+JUDGE REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 0 pending)
