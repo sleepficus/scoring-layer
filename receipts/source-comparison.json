@@ -1,0 +1,128 @@
+[
+  {
+    "source_path": "HANDOFF.md",
+    "original_sha256": "4c22dbdddf7b6fe5007a851e5a32f4a498adc0b4bd918ad51e5942285b718885",
+    "candidate_sha256": "4c22dbdddf7b6fe5007a851e5a32f4a498adc0b4bd918ad51e5942285b718885",
+    "changed": false
+  },
+  {
+    "source_path": "SCORING-DEMO-SPEC.md",
+    "original_sha256": "ca1ab7d2ea4c2d7ab3422a42a38e1c7b0cb4b3111d850c941671bc9e63a3934a",
+    "candidate_sha256": "ca1ab7d2ea4c2d7ab3422a42a38e1c7b0cb4b3111d850c941671bc9e63a3934a",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/BUILD-SHEET.md",
+    "original_sha256": "7bf3c8a963dbf43dedf7e5c3785429a5c5d889edb2633d4f1077cd966940b743",
+    "candidate_sha256": "6851642e4ddda09fa3ccb1d41423ed29909e50faa01f1d638670a24ce52a8a30",
+    "changed": true
+  },
+  {
+    "source_path": "scoring-layer/PROGRESS.md",
+    "original_sha256": "0b106c48faffdc4c0f0cbac9e434316911db026bff8c826858cdfe3cffaaec4e",
+    "candidate_sha256": "8da7f7c8a57d220d8048b0e87841e58fc2d063cb80ccf0041a3167f27c3e5b5d",
+    "changed": true
+  },
+  {
+    "source_path": "scoring-layer/README.md",
+    "original_sha256": "3e308cebd30dd4cfdf9e986a577f580b68276e421c520b71d38c0caca2af0b1d",
+    "candidate_sha256": "7889992b9e0aea0b5983620bda594d2b3dde2a40ccfa3ccd617a49cc782ad956",
+    "changed": true
+  },
+  {
+    "source_path": "scoring-layer/data/chain.jsonl",
+    "original_sha256": "a4be29b831c6b1d4302b319c9623476491290b528ca68543a933367098a6fa4a",
+    "candidate_sha256": "a4be29b831c6b1d4302b319c9623476491290b528ca68543a933367098a6fa4a",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/scoring/__init__.py",
+    "original_sha256": "e0b007876df111c5676987a819341b8f2f28bcd6d12e4e71106fd4d52fe3b86b",
+    "candidate_sha256": "e0b007876df111c5676987a819341b8f2f28bcd6d12e4e71106fd4d52fe3b86b",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/scoring/capture.py",
+    "original_sha256": "20184e346f7687325c37b5f7b9234ab30e415ef11d370f34b0fb4305fab9183b",
+    "candidate_sha256": "5337ca59ec3def3d5bb8b1da7edd1d6de8834ff76c26931c027e47195432fe1e",
+    "changed": true
+  },
+  {
+    "source_path": "scoring-layer/scoring/chain.py",
+    "original_sha256": "9355aa4a2a7c230bd79e0466e2e786cbce6fd5d3240cf3aedd3aff2d4aaeb947",
+    "candidate_sha256": "9355aa4a2a7c230bd79e0466e2e786cbce6fd5d3240cf3aedd3aff2d4aaeb947",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/scoring/cli.py",
+    "original_sha256": "fe65066358c316e3b66d720112a607d17ec6b5375ac03af13f68f9486d705c5d",
+    "candidate_sha256": "d9ef615287a00383da32b4482531eed4383146e4cb7e7b93b0234779bc9d1304",
+    "changed": true
+  },
+  {
+    "source_path": "scoring-layer/scoring/graders.py",
+    "original_sha256": "d7b01d8d38d74bf8f7232c35b9e1c2e0a7f1d82d7ebcc38d5fdfc06feb4b6641",
+    "candidate_sha256": "7c0c9622700ca92b78daa48a50026bb957caa22426d8559647ca13d7cf81acf7",
+    "changed": true
+  },
+  {
+    "source_path": "scoring-layer/scoring/precision.py",
+    "original_sha256": "fabf2f7ffbf8a4695380769e596cb5579938e5e084db5778addd840ec2e227ed",
+    "candidate_sha256": "fabf2f7ffbf8a4695380769e596cb5579938e5e084db5778addd840ec2e227ed",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/scoring/scorecard.py",
+    "original_sha256": "10c442b35f5471e8409f2e6b1dacdd4afd3aa7a33bb1a3e9a28633d249d7c836",
+    "candidate_sha256": "1fdd54fb8bf0b53da3bf887ae3287becbe62821b99a1b325fff5c101fb555e8f",
+    "changed": true
+  },
+  {
+    "source_path": "scoring-layer/scoring/sealing.py",
+    "original_sha256": "b1441e22eae3dc4d345a22a28baf72fa5f66a58ad25c538da40edce33af3d247",
+    "candidate_sha256": "dde1ea000f9c41e5fa136c6d6adbfb859d2ba03ab68d87fe425b20f6af982ffb",
+    "changed": true
+  },
+  {
+    "source_path": "scoring-layer/tests/__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/tests/test_audit_fixes.py",
+    "original_sha256": "a899dd31a1bda8f2963e06339ffe6e57d3bd7b0e06851fe8500603cd05920e2f",
+    "candidate_sha256": "a899dd31a1bda8f2963e06339ffe6e57d3bd7b0e06851fe8500603cd05920e2f",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/tests/test_chain.py",
+    "original_sha256": "32d1e32b944ee98d0642ea033f1be699f3df56a30fcc324acc527a532980fe92",
+    "candidate_sha256": "32d1e32b944ee98d0642ea033f1be699f3df56a30fcc324acc527a532980fe92",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/tests/test_end_to_end.py",
+    "original_sha256": "b37745943e04cc2fd2b06b83f82b7e92ac76be1ab1b4df01be251873359f7c37",
+    "candidate_sha256": "b37745943e04cc2fd2b06b83f82b7e92ac76be1ab1b4df01be251873359f7c37",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/tests/test_graders.py",
+    "original_sha256": "28fa086bb14db3c6ecd2e69a0dbe374628d00260abc790b1953edfb3a255a933",
+    "candidate_sha256": "28fa086bb14db3c6ecd2e69a0dbe374628d00260abc790b1953edfb3a255a933",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/tests/test_precision.py",
+    "original_sha256": "cdc3514c914f116ca44260af8a1ff5913bfaf26fb9c027a32d657d621acdbc14",
+    "candidate_sha256": "cdc3514c914f116ca44260af8a1ff5913bfaf26fb9c027a32d657d621acdbc14",
+    "changed": false
+  },
+  {
+    "source_path": "scoring-layer/tests/test_sealing.py",
+    "original_sha256": "1e5d0e3a3fe28470f9addb9f964d3861405810ff668bbd073f419d0d25cf316a",
+    "candidate_sha256": "1e5d0e3a3fe28470f9addb9f964d3861405810ff668bbd073f419d0d25cf316a",
+    "changed": false
+  }
+]

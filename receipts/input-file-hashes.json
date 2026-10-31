@@ -1,0 +1,23 @@
+{
+  "HANDOFF.md": "4c22dbdddf7b6fe5007a851e5a32f4a498adc0b4bd918ad51e5942285b718885",
+  "SCORING-DEMO-SPEC.md": "ca1ab7d2ea4c2d7ab3422a42a38e1c7b0cb4b3111d850c941671bc9e63a3934a",
+  "scoring-layer/BUILD-SHEET.md": "7bf3c8a963dbf43dedf7e5c3785429a5c5d889edb2633d4f1077cd966940b743",
+  "scoring-layer/PROGRESS.md": "0b106c48faffdc4c0f0cbac9e434316911db026bff8c826858cdfe3cffaaec4e",
+  "scoring-layer/README.md": "3e308cebd30dd4cfdf9e986a577f580b68276e421c520b71d38c0caca2af0b1d",
+  "scoring-layer/data/chain.jsonl": "a4be29b831c6b1d4302b319c9623476491290b528ca68543a933367098a6fa4a",
+  "scoring-layer/scoring/__init__.py": "e0b007876df111c5676987a819341b8f2f28bcd6d12e4e71106fd4d52fe3b86b",
+  "scoring-layer/scoring/capture.py": "20184e346f7687325c37b5f7b9234ab30e415ef11d370f34b0fb4305fab9183b",
+  "scoring-layer/scoring/chain.py": "9355aa4a2a7c230bd79e0466e2e786cbce6fd5d3240cf3aedd3aff2d4aaeb947",
+  "scoring-layer/scoring/cli.py": "fe65066358c316e3b66d720112a607d17ec6b5375ac03af13f68f9486d705c5d",
+  "scoring-layer/scoring/graders.py": "d7b01d8d38d74bf8f7232c35b9e1c2e0a7f1d82d7ebcc38d5fdfc06feb4b6641",
+  "scoring-layer/scoring/precision.py": "fabf2f7ffbf8a4695380769e596cb5579938e5e084db5778addd840ec2e227ed",
+  "scoring-layer/scoring/scorecard.py": "10c442b35f5471e8409f2e6b1dacdd4afd3aa7a33bb1a3e9a28633d249d7c836",
+  "scoring-layer/scoring/sealing.py": "b1441e22eae3dc4d345a22a28baf72fa5f66a58ad25c538da40edce33af3d247",
+  "scoring-layer/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scoring-layer/tests/test_audit_fixes.py": "a899dd31a1bda8f2963e06339ffe6e57d3bd7b0e06851fe8500603cd05920e2f",
+  "scoring-layer/tests/test_chain.py": "32d1e32b944ee98d0642ea033f1be699f3df56a30fcc324acc527a532980fe92",
+  "scoring-layer/tests/test_end_to_end.py": "b37745943e04cc2fd2b06b83f82b7e92ac76be1ab1b4df01be251873359f7c37",
+  "scoring-layer/tests/test_graders.py": "28fa086bb14db3c6ecd2e69a0dbe374628d00260abc790b1953edfb3a255a933",
+  "scoring-layer/tests/test_precision.py": "cdc3514c914f116ca44260af8a1ff5913bfaf26fb9c027a32d657d621acdbc14",
+  "scoring-layer/tests/test_sealing.py": "1e5d0e3a3fe28470f9addb9f964d3861405810ff668bbd073f419d0d25cf316a"
+}
