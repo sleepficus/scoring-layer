@@ -1,0 +1,10 @@
+test_card_freshness_requires_positive_finite_nonboolean (tests.test_numeric_criteria.TestNumericCriteria.test_card_freshness_requires_positive_finite_nonboolean) ... ok
+test_cli_nan_card_is_refused_before_chain_or_score (tests.test_numeric_criteria.TestNumericCriteria.test_cli_nan_card_is_refused_before_chain_or_score) ... ok
+test_cost_bounds_reject_nonfinite_and_boolean (tests.test_numeric_criteria.TestNumericCriteria.test_cost_bounds_reject_nonfinite_and_boolean) ... ok
+test_question_override_requires_positive_finite_nonboolean (tests.test_numeric_criteria.TestNumericCriteria.test_question_override_requires_positive_finite_nonboolean) ... ok
+test_valid_fractional_freshness_and_zero_cost_still_seal (tests.test_numeric_criteria.TestNumericCriteria.test_valid_fractional_freshness_and_zero_cost_still_seal) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+OK
