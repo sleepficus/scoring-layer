@@ -1,0 +1,109 @@
+COMMAND: ['/Library/Developer/CommandLineTools/usr/bin/python3', '-m', 'scoring.cli', 'run', '--session1', '--chain', '/Users/carrie/my-project/scoring-layer-session2/receipts/lanes/integration-legacy-chain.jsonl']
+EXIT: 0
+STDOUT:
+Session 1 compatibility replay
+Task card sealed: 0558af83a81cac2163dd0dc0ed6ed4fade3880f79ec89bbba333fdb238adc784
+  appended to chain as seq 1
+
+========================================================================
+SCORING LAYER — RUN SCORECARD
+DATA: SYNTHETIC FIXTURE — invented pages, prices, and responses. Not real Firecrawl output.
+Run:        run-synthetic-clean  (agent: fixture-agent (synthetic))
+Task card:  synthetic-widgetforge-research-v1 — SYNTHETIC fixture task — WidgetForge pricing and limits (invented company)
+Card seal:  0558af83a81cac2163dd0dc0ed6ed4fade3880f79ec89bbba333fdb238adc784  (sealed 2026-10-27T15:55:00Z)
+Started at: 2026-10-27T16:00:00Z
+Chain:      task_card seq 1, run seq 2, verdicts seq 3
+Flags: DETERMINISTIC 0; JUDGE 0 (each receipt below; no composite score)
+
+-- Fetch truth (grader: fetch-truth) --
+Relied-on fetches: 2 of 2 total; flags: 0
+
+-- Freshness (grader: freshness) --
+Sealed freshness bound: 1h; flags: 0
+
+-- Completeness (grader: completeness) --
+Required elements: 4; present: 4; missing: 0; flags: 0
+  q1: present=['WidgetForge Pro', '$49 per month']
+  q1: missing=[]
+  q2: present=['WidgetForge Pro', '1,200 requests']
+  q2: missing=[]
+
+-- Cost truth (grader: cost-truth) --
+Credits spent: 2 (bound 10); tokens spent: 1400 (bound 20000)
+Historical Session 1 denominator — required elements found in consumed content: 4 of 4; credits per present element: 0.5; tokens per present element: 350.0
+  https://widgetforge.invalid/pricing: 1 credits, 800 tokens
+  https://widgetforge.invalid/docs/limits: 1 credits, 600 tokens
+Flags: 0
+
+Session 1 compatibility: claim-support grading was not run.
+========================================================================
+
+========================================================================
+SCORING LAYER — RUN SCORECARD
+DATA: SYNTHETIC FIXTURE — invented pages, prices, and responses. Not real Firecrawl output.
+Run:        run-synthetic-failures  (agent: fixture-agent (synthetic))
+Task card:  synthetic-widgetforge-research-v1 — SYNTHETIC fixture task — WidgetForge pricing and limits (invented company)
+Card seal:  0558af83a81cac2163dd0dc0ed6ed4fade3880f79ec89bbba333fdb238adc784  (sealed 2026-10-27T15:55:00Z)
+Started at: 2026-10-27T16:00:00Z
+Chain:      task_card seq 1, run seq 4, verdicts seq 5
+Flags: DETERMINISTIC 5; JUDGE 0 (each receipt below; no composite score)
+
+-- Fetch truth (grader: fetch-truth) --
+Relied-on fetches: 2 of 2 total; flags: 1
+  FLAG run-synthetic-failures:fetch-truth:1
+    criterion: A relied-on document must be a real 200 document, not an error, block, or challenge page delivered as a document.
+    subject:   https://widgetforge.invalid/pricing
+    evidence:  {"cacheState": "miss", "content_excerpt": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# 403 Forbidden\n\nAccess denied. Your request was blocked by the server.", "creditsUsed": 1, "reasons": ["statusCode is 403, not 200", "content matches block/challenge markers: ['403 forbidden', 'access denied']"], "statusCode": 403}
+
+-- Freshness (grader: freshness) --
+Sealed freshness bound: 1h; flags: 1
+  FLAG run-synthetic-failures:freshness:1
+    criterion: cachedAt must be inside the sealed freshness bound.
+    subject:   https://widgetforge.invalid/docs/limits
+    evidence:  {"age_hours": 7.0, "bound_hours": 1, "cacheState": "hit", "cachedAt": "2026-10-27T09:00:00Z", "question_ids": ["q2"], "run_started_at": "2026-10-27T16:00:00Z"}
+
+-- Completeness (grader: completeness) --
+Required elements: 4; present: 1; missing: 3; flags: 3
+  q1: present=[]
+  q1: missing=['WidgetForge Pro', '$49 per month']
+  q2: present=['WidgetForge Pro']
+  q2: missing=['1,200 requests']
+  FLAG run-synthetic-failures:completeness:1
+    criterion: Every required element sealed in the task card must appear in the content the agent consumed.
+    subject:   q1: WidgetForge Pro
+    evidence:  {"fetched_urls": ["https://widgetforge.invalid/pricing"], "missing_element": "WidgetForge Pro", "present_elements": [], "question": "What does WidgetForge Pro cost per month?", "question_id": "q1"}
+  FLAG run-synthetic-failures:completeness:2
+    criterion: Every required element sealed in the task card must appear in the content the agent consumed.
+    subject:   q1: $49 per month
+    evidence:  {"fetched_urls": ["https://widgetforge.invalid/pricing"], "missing_element": "$49 per month", "present_elements": [], "question": "What does WidgetForge Pro cost per month?", "question_id": "q1"}
+  FLAG run-synthetic-failures:completeness:3
+    criterion: Every required element sealed in the task card must appear in the content the agent consumed.
+    subject:   q2: 1,200 requests
+    evidence:  {"fetched_urls": ["https://widgetforge.invalid/docs/limits"], "missing_element": "1,200 requests", "present_elements": ["WidgetForge Pro"], "question": "How many API requests per month does WidgetForge Pro include?", "question_id": "q2"}
+
+-- Cost truth (grader: cost-truth) --
+Credits spent: 2 (bound 10); tokens spent: 620 (bound 20000)
+Historical Session 1 denominator — required elements found in consumed content: 1 of 4; credits per present element: 2.0; tokens per present element: 620.0
+  https://widgetforge.invalid/pricing: 1 credits, 120 tokens
+  https://widgetforge.invalid/docs/limits: 1 credits, 500 tokens
+Flags: 0
+
+Session 1 compatibility: claim-support grading was not run.
+========================================================================
+
+SYNTHETIC REVIEW DECISIONS (labeled fixture data; not actual human reviews):
+GRADER PRECISION (from human confirm/kill decisions)
+  completeness: precision 66.7% (2 confirmed, 1 killed, 0 pending)
+  fetch-truth: precision 100.0% (1 confirmed, 0 killed, 0 pending)
+  freshness: precision 100.0% (1 confirmed, 0 killed, 0 pending)
+  OVERALL: precision 80.0% (4 confirmed, 1 killed, 0 pending)
+  Decision receipts:
+    - run-synthetic-failures:fetch-truth:1 · grader fetch-truth · confirm · chain seq 6 · note: SYNTHETIC demo decision: the 403-as-document flag is a true catch.
+    - run-synthetic-failures:freshness:1 · grader freshness · confirm · chain seq 7 · note: SYNTHETIC demo decision: the 7-hour-old cache against a 1-hour sealed bound is a true catch.
+    - run-synthetic-failures:completeness:1 · grader completeness · confirm · chain seq 8 · note: SYNTHETIC demo decision: 'WidgetForge Pro' truly is absent from the 403 page the agent relied on.
+    - run-synthetic-failures:completeness:2 · grader completeness · confirm · chain seq 9 · note: SYNTHETIC demo decision: '$49 per month' truly is absent from the 403 page the agent relied on.
+    - run-synthetic-failures:completeness:3 · grader completeness · kill · chain seq 10 · note: SYNTHETIC demo decision — the planted grader error: the content did carry the fact as '1200 requests'; the grader's exact-string match missed the formatting variant. Flag killed; completeness precision takes the hit on the scorecard, honestly.
+
+Chain after run: 10 records, verify ok=True
+
+STDERR:
