@@ -1,0 +1,41 @@
+{
+  "task_card": {
+    "id": "live-keyless-example-domain-20261028",
+    "title": "One real keyless free Firecrawl capture probe",
+    "freshness_bound_hours": 24,
+    "cost_bound": {
+      "max_credits": 1,
+      "max_tokens": 0
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What use does Example Domain state?",
+        "required_elements": [
+          "documentation examples"
+        ]
+      }
+    ],
+    "setting_reasons": {
+      "owner": "Session 2 coordinator under Stephen free-only authorization",
+      "reason": "One basic keyless scrape; no agent-generation API calls; provider token/cost omissions remain UNKNOWN. Bounds are scoring criteria, not a paid authorization.",
+      "until": "this single capture attempt"
+    }
+  },
+  "run_id": "run-live-keyless-20261028",
+  "agent_label": "Session 2 coordinator supplied verification sentence; no autonomous agent loop",
+  "final_answer": "This domain is for use in documentation examples without needing permission. [1]",
+  "citations": {
+    "1": "https://example.com/"
+  },
+  "fetches": [
+    {
+      "url": "https://example.com/",
+      "question_ids": [
+        "q1"
+      ],
+      "relied_on": true
+    }
+  ],
+  "notes": "One public-domain-page capture through documented free keyless endpoint. Final sentence supplied before capture from a current public read. No purchase, API key, retries or paid fallback."
+}
