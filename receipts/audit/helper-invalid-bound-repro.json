@@ -1,0 +1,135 @@
+{
+  "human_decisions": [],
+  "recovery_note": "Recovered normalized content from supplied v2 chain; not an original-byte copy of the omitted fixture. response.success is a reconstructed wrapper field ignored by the Session1 loader.",
+  "runs": [
+    {
+      "agent_label": "fixture-agent (synthetic)",
+      "fetches": [
+        {
+          "question_ids": [
+            "q1"
+          ],
+          "relied_on": true,
+          "response": {
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# WidgetForge Pricing\n\nWidgetForge Pro \u2014 $49 per month.\nWidgetForge Starter \u2014 $19 per month.",
+              "metadata": {
+                "cacheState": "miss",
+                "cachedAt": "2026-10-27T15:55:00Z",
+                "sourceURL": "https://widgetforge.invalid/pricing",
+                "statusCode": 200
+              }
+            },
+            "success": true
+          },
+          "tokensUsed": 800,
+          "url": "https://widgetforge.invalid/pricing"
+        },
+        {
+          "question_ids": [
+            "q2"
+          ],
+          "relied_on": true,
+          "response": {
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# WidgetForge API Limits\n\nWidgetForge Pro includes 1,200 requests per month. Overage is billed per 1,000 requests.",
+              "metadata": {
+                "cacheState": "hit",
+                "cachedAt": "2026-10-27T15:50:00Z",
+                "sourceURL": "https://widgetforge.invalid/docs/limits",
+                "statusCode": 200
+              }
+            },
+            "success": true
+          },
+          "tokensUsed": 600,
+          "url": "https://widgetforge.invalid/docs/limits"
+        }
+      ],
+      "final_answer": "SYNTHETIC fixture answer: WidgetForge Pro costs $49 per month and includes 1,200 requests per month.",
+      "run_id": "run-synthetic-clean",
+      "started_at": "2026-10-27T16:00:00Z"
+    },
+    {
+      "agent_label": "fixture-agent (synthetic)",
+      "fetches": [
+        {
+          "question_ids": [
+            "q1"
+          ],
+          "relied_on": true,
+          "response": {
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# 403 Forbidden\n\nAccess denied. Your request was blocked by the server.",
+              "metadata": {
+                "cacheState": "miss",
+                "cachedAt": "2026-10-27T15:59:00Z",
+                "sourceURL": "https://widgetforge.invalid/pricing",
+                "statusCode": 403
+              }
+            },
+            "success": true
+          },
+          "tokensUsed": 120,
+          "url": "https://widgetforge.invalid/pricing"
+        },
+        {
+          "question_ids": [
+            "q2"
+          ],
+          "relied_on": true,
+          "response": {
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# WidgetForge API Limits\n\nWidgetForge Pro includes 1200 requests per month.",
+              "metadata": {
+                "cacheState": "hit",
+                "cachedAt": "2026-10-27T09:00:00Z",
+                "sourceURL": "https://widgetforge.invalid/docs/limits",
+                "statusCode": 200
+              }
+            },
+            "success": true
+          },
+          "tokensUsed": 500,
+          "url": "https://widgetforge.invalid/docs/limits"
+        }
+      ],
+      "final_answer": "SYNTHETIC fixture answer: WidgetForge Pro costs $49 per month (the agent states a price its only pricing fetch never contained \u2014 the 403 catch) and includes 1200 requests per month (from a 7-hour-old cache).",
+      "run_id": "run-synthetic-failures",
+      "started_at": "2026-10-27T16:00:00Z"
+    }
+  ],
+  "synthetic": true,
+  "task_card": {
+    "cost_bound": {
+      "max_credits": 10,
+      "max_tokens": 20000
+    },
+    "freshness_bound_hours": NaN,
+    "id": "synthetic-widgetforge-research-v1",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What does WidgetForge Pro cost per month?",
+        "required_elements": [
+          "WidgetForge Pro",
+          "$49 per month"
+        ]
+      },
+      {
+        "id": "q2",
+        "question": "How many API requests per month does WidgetForge Pro include?",
+        "required_elements": [
+          "WidgetForge Pro",
+          "1,200 requests"
+        ]
+      }
+    ],
+    "skin": "firecrawl-first-skin",
+    "title": "SYNTHETIC fixture task \u2014 WidgetForge pricing and limits (invented company)"
+  }
+}
