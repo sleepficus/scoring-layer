@@ -1,0 +1,11 @@
+{
+  "checkpoint": "pre-audit-repair-source.zip",
+  "sha256": "26a55d31b3472474502fcb060e12a4f437a4969aa43839ee12c27048ef5bdbc9",
+  "files": {
+    "scoring/sealing.py": "b1441e22eae3dc4d345a22a28baf72fa5f66a58ad25c538da40edce33af3d247",
+    "scoring/claims.py": "9179ae9eea4c913872758b7ca25381f2de9117e92f3c936f0f64543004596b7d",
+    "tests/test_sealing.py": "1e5d0e3a3fe28470f9addb9f964d3861405810ff668bbd073f419d0d25cf316a",
+    "tests/test_claims.py": "7f130c49c410f2899073bafae464dd215c525c6d07513b4d3ffa5d1001a23fae"
+  },
+  "restore_assessment": "The original supplied sealing.py also accepts nonfinite criteria, so restoring it preserves A5. Session1 has no claims module; restoring it would remove requested Session2 functionality and cannot repair A1-A4. Preserve current candidate checkpoint and make focused evidence-led repairs."
+}
