@@ -1,0 +1,194 @@
+[
+  {
+    "pack": "fixtures/synthetic_firecrawl.json",
+    "step": "run",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "fixtures/synthetic_firecrawl.json",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmp0da1xm77/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-original-run.log",
+    "sha256": "02b8c315236ac44523ed6de3fc6d79ffe781531e450deb62000bfa6bd393f9d8"
+  },
+  {
+    "pack": "fixtures/synthetic_firecrawl.json",
+    "step": "verify",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmp0da1xm77/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-original-verify.log",
+    "sha256": "a461e5160afbc2962e0eb0a83841d31570474c21272c6f74de5284a5d3da1ddc"
+  },
+  {
+    "pack": "fixtures/synthetic_firecrawl.json",
+    "step": "precision",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--session2",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmp0da1xm77/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-original-precision.log",
+    "sha256": "5b1d1a9c0115c8ee3e732131ddbc27517941894f2d36a27f2dcfec93fd360f7f"
+  },
+  {
+    "pack": "fixtures/session2_claim_support.json",
+    "step": "run",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "fixtures/session2_claim_support.json",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmpp1jcsi6s/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-cited-run.log",
+    "sha256": "ba91f8405136ecc0327762fffb342d0f98971e8f3a17c34f8b70187b5508e985"
+  },
+  {
+    "pack": "fixtures/session2_claim_support.json",
+    "step": "verify",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmpp1jcsi6s/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-cited-verify.log",
+    "sha256": "7240085ec817d02e76b740b225650195a0001f7ca127a8a4162417cfdd51e40d"
+  },
+  {
+    "pack": "fixtures/session2_claim_support.json",
+    "step": "precision",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--session2",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmpp1jcsi6s/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-cited-precision.log",
+    "sha256": "17519c2257030f8299e3cbb3677f1526969961649b1c17fc634cc09b18264000"
+  },
+  {
+    "pack": "fixtures/session2_judge_demo.json",
+    "step": "run",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "fixtures/session2_judge_demo.json",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmpvnd7g1hh/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-judge-run.log",
+    "sha256": "baf92bc7ed1766af6047c7b220bc43b639ef70360cf5f8477e2eada548e11d52"
+  },
+  {
+    "pack": "fixtures/session2_judge_demo.json",
+    "step": "verify",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmpvnd7g1hh/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-judge-verify.log",
+    "sha256": "8af1fce4eccfcd076879fb5bb839dcfbc9085b97e0b373e298d9218384ae7d7d"
+  },
+  {
+    "pack": "fixtures/session2_judge_demo.json",
+    "step": "precision",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--session2",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmpvnd7g1hh/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-judge-precision.log",
+    "sha256": "2d526f104798c7242197232806136fd5e2ed1580fe6a32fbad21c8d0a1058e70"
+  },
+  {
+    "pack": "receipts/live-keyless-capture.json",
+    "step": "run",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "receipts/live-keyless-capture.json",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmp11s9vc7u/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-live-replay-run.log",
+    "sha256": "7b036d696b06729fe4051002d86d6c613a6476cef9f51d1f8310ff56e99f0b13"
+  },
+  {
+    "pack": "receipts/live-keyless-capture.json",
+    "step": "verify",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmp11s9vc7u/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-live-replay-verify.log",
+    "sha256": "a277ab6b8b6958f44a4211ca0f0fdec3b5fe6eb8afdcb335cf8080866277a842"
+  },
+  {
+    "pack": "receipts/live-keyless-capture.json",
+    "step": "precision",
+    "command": [
+      "python3.12",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--session2",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmp11s9vc7u/chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/python312-live-replay-precision.log",
+    "sha256": "fd681d93b2c272df9c1db10d3690d66be9ec60202182bd98d70e24d6e6daaffb"
+  }
+]
