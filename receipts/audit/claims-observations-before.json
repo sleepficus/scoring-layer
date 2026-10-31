@@ -1,0 +1,108 @@
+{
+  "cli_exit": 0,
+  "deterministic": {
+    "CONTRADICTED": 0,
+    "SUPPORTED": 2,
+    "UNSUPPORTED": 0,
+    "total": 2
+  },
+  "claim_rows": [
+    {
+      "absence": null,
+      "answer_sha256": "3507b8adb30ac247fbd3187492ae91090f275096f6b36649813e94e74c7e3ad4",
+      "answer_span": {
+        "end": 36,
+        "start": 0
+      },
+      "binding_errors": [],
+      "bound_fetch_indices": [
+        0
+      ],
+      "citations": [
+        {
+          "reference": "[1]",
+          "url": "https://widgetforge.invalid/pricing"
+        }
+      ],
+      "claim_id": "independent-cli-attribution-probe:claim:1",
+      "context_prefix": "",
+      "method": "DETERMINISTIC",
+      "needs_judge": false,
+      "normalized_claim": "WidgetForge Pro costs $49 per month",
+      "passages": [
+        {
+          "document_sha256": "e5940e9a62b09266aecace6c9c42107069c52e27a8eccc39a4421fe850cecdc3",
+          "end": 36,
+          "fetch_index": 0,
+          "start": 0,
+          "text": "WidgetForge Pro costs $49 per month.",
+          "url": "https://widgetforge.invalid/pricing"
+        }
+      ],
+      "reason": "Complete statement or narrow subject/relation/value assertion matches a cited captured passage.",
+      "text": "WidgetForge Pro costs $49 per month.",
+      "verdict": "SUPPORTED"
+    },
+    {
+      "absence": null,
+      "answer_sha256": "3507b8adb30ac247fbd3187492ae91090f275096f6b36649813e94e74c7e3ad4",
+      "answer_span": {
+        "end": 90,
+        "start": 37
+      },
+      "binding_errors": [],
+      "bound_fetch_indices": [
+        0
+      ],
+      "citations": [
+        {
+          "reference": "[1]",
+          "url": "https://widgetforge.invalid/pricing"
+        }
+      ],
+      "claim_id": "independent-cli-attribution-probe:claim:2",
+      "context_prefix": "",
+      "method": "DETERMINISTIC",
+      "needs_judge": false,
+      "normalized_claim": "WidgetForge Pro includes 1200 requests per month",
+      "passages": [
+        {
+          "document_sha256": "e5940e9a62b09266aecace6c9c42107069c52e27a8eccc39a4421fe850cecdc3",
+          "end": 86,
+          "fetch_index": 0,
+          "start": 37,
+          "text": "WidgetForge Pro includes 1200 requests per month.",
+          "url": "https://widgetforge.invalid/pricing"
+        }
+      ],
+      "reason": "Complete statement or narrow subject/relation/value assertion matches a cited captured passage.",
+      "text": "[1] WidgetForge Pro includes 1200 requests per month.",
+      "verdict": "SUPPORTED"
+    }
+  ],
+  "source_hashes": {
+    "scoring/__init__.py": "e0b007876df111c5676987a819341b8f2f28bcd6d12e4e71106fd4d52fe3b86b",
+    "scoring/capture.py": "5337ca59ec3def3d5bb8b1da7edd1d6de8834ff76c26931c027e47195432fe1e",
+    "scoring/chain.py": "9355aa4a2a7c230bd79e0466e2e786cbce6fd5d3240cf3aedd3aff2d4aaeb947",
+    "scoring/claims.py": "9179ae9eea4c913872758b7ca25381f2de9117e92f3c936f0f64543004596b7d",
+    "scoring/cli.py": "d9ef615287a00383da32b4482531eed4383146e4cb7e7b93b0234779bc9d1304",
+    "scoring/graders.py": "7c0c9622700ca92b78daa48a50026bb957caa22426d8559647ca13d7cf81acf7",
+    "scoring/live.py": "2cb82ed03f7f7c36446cc35a781f15230de3ff77247be8071d2808c89b03b022",
+    "scoring/precision.py": "fabf2f7ffbf8a4695380769e596cb5579938e5e084db5778addd840ec2e227ed",
+    "scoring/scorecard.py": "1fdd54fb8bf0b53da3bf887ae3287becbe62821b99a1b325fff5c101fb555e8f",
+    "scoring/sealing.py": "b1441e22eae3dc4d345a22a28baf72fa5f66a58ad25c538da40edce33af3d247",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_audit_fixes.py": "a899dd31a1bda8f2963e06339ffe6e57d3bd7b0e06851fe8500603cd05920e2f",
+    "tests/test_chain.py": "32d1e32b944ee98d0642ea033f1be699f3df56a30fcc324acc527a532980fe92",
+    "tests/test_claims.py": "7f130c49c410f2899073bafae464dd215c525c6d07513b4d3ffa5d1001a23fae",
+    "tests/test_demo_pack.py": "be148982033c1028e69ac42f1fefc61a8426742dd97e7768d21e3101f000116a",
+    "tests/test_end_to_end.py": "b37745943e04cc2fd2b06b83f82b7e92ac76be1ab1b4df01be251873359f7c37",
+    "tests/test_graders.py": "28fa086bb14db3c6ecd2e69a0dbe374628d00260abc790b1953edfb3a255a933",
+    "tests/test_live_capture.py": "49e328f3c3161c30931df4454d843e1fd53cbe81869218b1c21afa481fcaaa5e",
+    "tests/test_precision.py": "cdc3514c914f116ca44260af8a1ff5913bfaf26fb9c027a32d657d621acdbc14",
+    "tests/test_sealing.py": "1e5d0e3a3fe28470f9addb9f964d3861405810ff668bbd073f419d0d25cf316a",
+    "tests/test_session2_pipeline.py": "34759b053ff3797388dca4de063c86fb51f374528ebba84d71065804023fba9d",
+    "data/chain.jsonl": "a4be29b831c6b1d4302b319c9623476491290b528ca68543a933367098a6fa4a",
+    "receipts/live-keyless-capture.json": "63edd1c8ee1555e474b39250a17f8d817166f52245daeb4674a92e4ad9d4cfac"
+  }
+}
