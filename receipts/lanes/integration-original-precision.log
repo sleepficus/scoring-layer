@@ -1,0 +1,22 @@
+COMMAND: ['/Library/Developer/CommandLineTools/usr/bin/python3', '-m', 'scoring.cli', 'precision-demo', '--session2', '--chain', '/Users/carrie/my-project/scoring-layer-session2/receipts/lanes/integration-original-chain.jsonl']
+EXIT: 0
+STDOUT:
+Precision from verified chain verdicts and queue_decision records (SYNTHETIC fixture demonstration; invented review decisions):
+DETERMINISTIC REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  claim-support: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 4 pending)
+  completeness: precision 66.7% (2 confirmed, 1 killed, 0 pending)
+  fetch-truth: precision 100.0% (1 confirmed, 0 killed, 0 pending)
+  freshness: precision 100.0% (1 confirmed, 0 killed, 0 pending)
+  OVERALL: precision 80.0% (4 confirmed, 1 killed, 4 pending)
+  Decision receipts:
+    - run-synthetic-failures:fetch-truth:1 · grader fetch-truth · confirm · chain seq 6 · note: SYNTHETIC demo decision: the 403-as-document flag is a true catch.
+    - run-synthetic-failures:freshness:1 · grader freshness · confirm · chain seq 7 · note: SYNTHETIC demo decision: the 7-hour-old cache against a 1-hour sealed bound is a true catch.
+    - run-synthetic-failures:completeness:1 · grader completeness · confirm · chain seq 8 · note: SYNTHETIC demo decision: 'WidgetForge Pro' truly is absent from the 403 page the agent relied on.
+    - run-synthetic-failures:completeness:2 · grader completeness · confirm · chain seq 9 · note: SYNTHETIC demo decision: '$49 per month' truly is absent from the 403 page the agent relied on.
+    - run-synthetic-failures:completeness:3 · grader completeness · kill · chain seq 10 · note: SYNTHETIC demo decision — the planted grader error: the content did carry the fact as '1200 requests'; the grader's exact-string match missed the formatting variant. Flag killed; completeness precision takes the hit on the scorecard, honestly.
+JUDGE REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 0 pending)
+
+STDERR:
