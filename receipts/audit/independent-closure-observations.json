@@ -1,0 +1,172 @@
+{
+  "original": [
+    {
+      "flag_count": 2,
+      "claim_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 2,
+        "total": 2
+      },
+      "judge_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 0,
+        "total": 0
+      }
+    },
+    {
+      "flag_count": 7,
+      "claim_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 2,
+        "total": 2
+      },
+      "judge_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 0,
+        "total": 0
+      }
+    }
+  ],
+  "demo": [
+    {
+      "flag_count": 3,
+      "claim_support": {
+        "CONTRADICTED": 1,
+        "SUPPORTED": 2,
+        "UNSUPPORTED": 2,
+        "total": 5
+      },
+      "judge_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 0,
+        "total": 0
+      }
+    }
+  ],
+  "judge": [
+    {
+      "flag_count": 3,
+      "claim_support": {
+        "CONTRADICTED": 1,
+        "SUPPORTED": 2,
+        "UNSUPPORTED": 2,
+        "total": 5
+      },
+      "judge_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 1,
+        "UNSUPPORTED": 0,
+        "total": 1
+      }
+    }
+  ],
+  "live": [
+    {
+      "flag_count": 1,
+      "claim_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 1,
+        "UNSUPPORTED": 0,
+        "total": 1
+      },
+      "judge_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 0,
+        "total": 0
+      }
+    }
+  ],
+  "legacy": [
+    {
+      "flag_count": 0,
+      "claim_support": null,
+      "judge_support": null
+    },
+    {
+      "flag_count": 5,
+      "claim_support": null,
+      "judge_support": null
+    }
+  ],
+  "a1": [
+    {
+      "flag_count": 1,
+      "claim_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 1,
+        "UNSUPPORTED": 1,
+        "total": 2
+      },
+      "judge_support": {
+        "CONTRADICTED": 0,
+        "SUPPORTED": 0,
+        "UNSUPPORTED": 0,
+        "total": 0
+      },
+      "claims": [
+        {
+          "absence": null,
+          "answer_sha256": "3507b8adb30ac247fbd3187492ae91090f275096f6b36649813e94e74c7e3ad4",
+          "answer_span": {
+            "end": 36,
+            "start": 0
+          },
+          "binding_errors": [],
+          "bound_fetch_indices": [
+            0
+          ],
+          "citations": [
+            {
+              "reference": "[1]",
+              "url": "https://widgetforge.invalid/pricing"
+            }
+          ],
+          "claim_id": "independent-cli-attribution-probe:claim:1",
+          "context_prefix": "",
+          "method": "DETERMINISTIC",
+          "needs_judge": false,
+          "normalized_claim": "WidgetForge Pro costs $49 per month",
+          "passages": [
+            {
+              "document_sha256": "e5940e9a62b09266aecace6c9c42107069c52e27a8eccc39a4421fe850cecdc3",
+              "end": 36,
+              "fetch_index": 0,
+              "start": 0,
+              "text": "WidgetForge Pro costs $49 per month.",
+              "url": "https://widgetforge.invalid/pricing"
+            }
+          ],
+          "reason": "Complete statement or narrow subject/relation/value assertion matches a cited captured passage.",
+          "text": "WidgetForge Pro costs $49 per month.",
+          "verdict": "SUPPORTED"
+        },
+        {
+          "absence": "No cited evidence; no URL inferred from question assignment or relied_on.",
+          "answer_sha256": "3507b8adb30ac247fbd3187492ae91090f275096f6b36649813e94e74c7e3ad4",
+          "answer_span": {
+            "end": 90,
+            "start": 41
+          },
+          "binding_errors": [],
+          "bound_fetch_indices": [],
+          "citations": [],
+          "claim_id": "independent-cli-attribution-probe:claim:2",
+          "context_prefix": "",
+          "method": "DETERMINISTIC",
+          "needs_judge": false,
+          "normalized_claim": "WidgetForge Pro includes 1200 requests per month",
+          "passages": [],
+          "reason": "No citation supplied for this claim.",
+          "text": "WidgetForge Pro includes 1200 requests per month.",
+          "verdict": "UNSUPPORTED"
+        }
+      ]
+    }
+  ]
+}
