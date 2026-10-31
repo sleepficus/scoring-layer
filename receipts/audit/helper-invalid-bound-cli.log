@@ -1,0 +1,93 @@
+Session 1 compatibility replay
+Task card sealed: 308d01dc9c67aa23255c0b623de5f3bbfab835d6b2bb53888c8498fa4b08d156
+  appended to chain as seq 1
+
+========================================================================
+SCORING LAYER — RUN SCORECARD
+DATA: SYNTHETIC FIXTURE — invented pages, prices, and responses. Not real Firecrawl output.
+Run:        run-synthetic-clean  (agent: fixture-agent (synthetic))
+Task card:  synthetic-widgetforge-research-v1 — SYNTHETIC fixture task — WidgetForge pricing and limits (invented company)
+Card seal:  308d01dc9c67aa23255c0b623de5f3bbfab835d6b2bb53888c8498fa4b08d156  (sealed 2026-10-27T15:55:00Z)
+Started at: 2026-10-27T16:00:00Z
+Chain:      task_card seq 1, run seq 2, verdicts seq 3
+Flags: DETERMINISTIC 0; JUDGE 0 (each receipt below; no composite score)
+
+-- Fetch truth (grader: fetch-truth) --
+Relied-on fetches: 2 of 2 total; flags: 0
+
+-- Freshness (grader: freshness) --
+Sealed freshness bound: nanh; flags: 0
+
+-- Completeness (grader: completeness) --
+Required elements: 4; present: 4; missing: 0; flags: 0
+  q1: present=['WidgetForge Pro', '$49 per month']
+  q1: missing=[]
+  q2: present=['WidgetForge Pro', '1,200 requests']
+  q2: missing=[]
+
+-- Cost truth (grader: cost-truth) --
+Credits spent: 2 (bound 10); tokens spent: 1400 (bound 20000)
+Historical Session 1 denominator — required elements found in consumed content: 4 of 4; credits per present element: 0.5; tokens per present element: 350.0
+  https://widgetforge.invalid/pricing: 1 credits, 800 tokens
+  https://widgetforge.invalid/docs/limits: 1 credits, 600 tokens
+Flags: 0
+
+Session 1 compatibility: claim-support grading was not run.
+========================================================================
+
+========================================================================
+SCORING LAYER — RUN SCORECARD
+DATA: SYNTHETIC FIXTURE — invented pages, prices, and responses. Not real Firecrawl output.
+Run:        run-synthetic-failures  (agent: fixture-agent (synthetic))
+Task card:  synthetic-widgetforge-research-v1 — SYNTHETIC fixture task — WidgetForge pricing and limits (invented company)
+Card seal:  308d01dc9c67aa23255c0b623de5f3bbfab835d6b2bb53888c8498fa4b08d156  (sealed 2026-10-27T15:55:00Z)
+Started at: 2026-10-27T16:00:00Z
+Chain:      task_card seq 1, run seq 4, verdicts seq 5
+Flags: DETERMINISTIC 4; JUDGE 0 (each receipt below; no composite score)
+
+-- Fetch truth (grader: fetch-truth) --
+Relied-on fetches: 2 of 2 total; flags: 1
+  FLAG run-synthetic-failures:fetch-truth:1
+    criterion: A relied-on document must be a real 200 document, not an error, block, or challenge page delivered as a document.
+    subject:   https://widgetforge.invalid/pricing
+    evidence:  {"cacheState": "miss", "content_excerpt": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# 403 Forbidden\n\nAccess denied. Your request was blocked by the server.", "creditsUsed": 1, "reasons": ["statusCode is 403, not 200", "content matches block/challenge markers: ['403 forbidden', 'access denied']"], "statusCode": 403}
+
+-- Freshness (grader: freshness) --
+Sealed freshness bound: nanh; flags: 0
+
+-- Completeness (grader: completeness) --
+Required elements: 4; present: 1; missing: 3; flags: 3
+  q1: present=[]
+  q1: missing=['WidgetForge Pro', '$49 per month']
+  q2: present=['WidgetForge Pro']
+  q2: missing=['1,200 requests']
+  FLAG run-synthetic-failures:completeness:1
+    criterion: Every required element sealed in the task card must appear in the content the agent consumed.
+    subject:   q1: WidgetForge Pro
+    evidence:  {"fetched_urls": ["https://widgetforge.invalid/pricing"], "missing_element": "WidgetForge Pro", "present_elements": [], "question": "What does WidgetForge Pro cost per month?", "question_id": "q1"}
+  FLAG run-synthetic-failures:completeness:2
+    criterion: Every required element sealed in the task card must appear in the content the agent consumed.
+    subject:   q1: $49 per month
+    evidence:  {"fetched_urls": ["https://widgetforge.invalid/pricing"], "missing_element": "$49 per month", "present_elements": [], "question": "What does WidgetForge Pro cost per month?", "question_id": "q1"}
+  FLAG run-synthetic-failures:completeness:3
+    criterion: Every required element sealed in the task card must appear in the content the agent consumed.
+    subject:   q2: 1,200 requests
+    evidence:  {"fetched_urls": ["https://widgetforge.invalid/docs/limits"], "missing_element": "1,200 requests", "present_elements": ["WidgetForge Pro"], "question": "How many API requests per month does WidgetForge Pro include?", "question_id": "q2"}
+
+-- Cost truth (grader: cost-truth) --
+Credits spent: 2 (bound 10); tokens spent: 620 (bound 20000)
+Historical Session 1 denominator — required elements found in consumed content: 1 of 4; credits per present element: 2.0; tokens per present element: 620.0
+  https://widgetforge.invalid/pricing: 1 credits, 120 tokens
+  https://widgetforge.invalid/docs/limits: 1 credits, 500 tokens
+Flags: 0
+
+Session 1 compatibility: claim-support grading was not run.
+========================================================================
+GRADER PRECISION (from human confirm/kill decisions)
+  completeness: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 3 pending)
+  fetch-truth: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 4 pending)
+
+Chain after run: 5 records, verify ok=True
+
+STDERR:
