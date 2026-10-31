@@ -1,0 +1,94 @@
+[
+  {
+    "name": "coordinator-tests",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "receipts/coordinator-tests.log",
+    "sha256": "a5e8c0863cd83df0cb0fc88eb5138a042fd238d67e868b87688621a7c7dd5ed4"
+  },
+  {
+    "name": "session2-demo-cli",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "fixtures/session2_claim_support.json",
+      "--chain",
+      "receipts/session2-demo-chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/session2-demo-cli.log",
+    "sha256": "ba91f8405136ecc0327762fffb342d0f98971e8f3a17c34f8b70187b5508e985"
+  },
+  {
+    "name": "session2-demo-verify",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "receipts/session2-demo-chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/session2-demo-verify.log",
+    "sha256": "747c50bfa423e8f300392e6d7e3f6d7c9467bb35059c556e7f9610db1bffdc27"
+  },
+  {
+    "name": "session2-demo-precision",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--session2",
+      "--pack",
+      "fixtures/session2_claim_support.json",
+      "--chain",
+      "receipts/session2-demo-chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/session2-demo-precision.log",
+    "sha256": "17519c2257030f8299e3cbb3677f1526969961649b1c17fc634cc09b18264000"
+  },
+  {
+    "name": "live-scorecard",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "receipts/live-keyless-capture.json",
+      "--chain",
+      "receipts/live-keyless-chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/live-scorecard.log",
+    "sha256": "7b036d696b06729fe4051002d86d6c613a6476cef9f51d1f8310ff56e99f0b13"
+  },
+  {
+    "name": "live-verify",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "receipts/live-keyless-chain.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/live-verify.log",
+    "sha256": "de2360a5afd20850cfbfc3af822d81be3b2a32c4552218add3a2a38208b10ef1"
+  }
+]

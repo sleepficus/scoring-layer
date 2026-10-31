@@ -1,0 +1,13 @@
+# Coordinator builder self-review before independent audit
+
+Read all 21 attached files before assigning three Sol 6.1 Ultra builder lanes. Source checkpoint, omitted fixture, recovery and 49-test baseline are recorded in RESTORATION.md. Original tests and source data chain are preserved; extra fixture files are explicitly synthetic.
+
+Re-ran the integrated suite and read the actual full CLI output for the cited five-claim demo and genuine capture, including passages, exact spans, hashes, method separation, synthetic labels and precision decision receipts. Added two outcome tests for the planted false flag and separate synthetic judge import. The demo shows 2 supported, 2 unsupported, 1 contradicted; precision is 1.0 before the invented kill and 0.6667 afterward. Judge import retains deterministic counts. Original answer text remains untouched and exposes missing citations.
+
+One genuine documented keyless Firecrawl POST completed at 2026-10-28T04:16:31Z: HTTP200,1807bytes,1reported credit,tokens UNKNOWN. No key, paid route or retry was used. The CLI loaded/scored it, preserved its raw receipt in the chain, emitted 1 supported claim and an honest cost UNVERIFIABLE flag for missing token metering; three chain records verify. This is a caller-supplied-answer capture probe, not an autonomous agent demo. All lane mock transports remain labeled synthetic.
+
+Review of the capture validation identified that citation/judge metadata and run start time were not yet compared with the saved request plan. The capture builder reproduced all four gaps, then repaired equality/chronology checks and added five regression tests. Its follow-up full suite passes124tests. The real capture remains byte-identical and validates after the repair. Before/after evidence and hashes are in lanes/capture-provenance-* and capture-receipt.json. This was the builder’s self-review lap before audit, not an independent certification.
+
+Reviewed conservative claim scope: exact prose and narrow numeric assertions are covered; broad semantic entailment, arbitrary languages/tables and external judge correctness remain explicitly unmeasured. No inferred citation is supplied to the original fixture. Historical cost per present task element is labeled separately from supported-claim cost; UNKNOWN and zero-denominator values do not become perfect scores. Imported judge rows are declared provenance, not authenticated identities. No dependency or paid model API was added.
+
+Questions for Stephen: none. Independent Sol6.1 Ultra auditor will now inspect the finished source/tests/CLI/evidence; this builder does not certify it.
