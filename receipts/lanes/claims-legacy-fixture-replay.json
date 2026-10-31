@@ -1,0 +1,120 @@
+[
+  {
+    "run_id": "run-synthetic-clean",
+    "deterministic": {
+      "SUPPORTED": 0,
+      "UNSUPPORTED": 2,
+      "CONTRADICTED": 0,
+      "total": 2
+    },
+    "claims": [
+      {
+        "claim_id": "run-synthetic-clean:claim:1",
+        "text": "WidgetForge Pro costs $49 per month",
+        "answer_span": {
+          "start": 26,
+          "end": 61
+        },
+        "normalized_claim": "WidgetForge Pro costs $49 per month",
+        "context_prefix": "",
+        "citations": [],
+        "answer_sha256": "5e97e1ad216104184f7ffb4303feceb633eb53bb8d7b2ef1ae3067abf71c93a1",
+        "method": "DETERMINISTIC",
+        "binding_errors": [],
+        "bound_fetch_indices": [],
+        "passages": [],
+        "absence": "No cited evidence; no URL inferred from question assignment or relied_on.",
+        "verdict": "UNSUPPORTED",
+        "needs_judge": false,
+        "reason": "No citation supplied for this claim."
+      },
+      {
+        "claim_id": "run-synthetic-clean:claim:2",
+        "text": "includes 1,200 requests per month.",
+        "answer_span": {
+          "start": 66,
+          "end": 100
+        },
+        "normalized_claim": "WidgetForge Pro includes 1,200 requests per month",
+        "context_prefix": "WidgetForge Pro ",
+        "citations": [],
+        "answer_sha256": "5e97e1ad216104184f7ffb4303feceb633eb53bb8d7b2ef1ae3067abf71c93a1",
+        "method": "DETERMINISTIC",
+        "binding_errors": [],
+        "bound_fetch_indices": [],
+        "passages": [],
+        "absence": "No cited evidence; no URL inferred from question assignment or relied_on.",
+        "verdict": "UNSUPPORTED",
+        "needs_judge": false,
+        "reason": "No citation supplied for this claim."
+      }
+    ],
+    "extraction": {
+      "method": "rule-based-v1",
+      "limits": [
+        "Rule-based prose candidates, not a claim-completeness guarantee; tables, ellipsis, pronouns, multilingual text and nested assertions may need review.",
+        "Unresolved semantics are UNSUPPORTED by deterministic checks, not a proof that no passage entails the claim; needs_judge identifies this residue.",
+        "Explicit inline/reference citations or a run citation map are required; question assignment and relied_on do not invent citations."
+      ]
+    }
+  },
+  {
+    "run_id": "run-synthetic-failures",
+    "deterministic": {
+      "SUPPORTED": 0,
+      "UNSUPPORTED": 2,
+      "CONTRADICTED": 0,
+      "total": 2
+    },
+    "claims": [
+      {
+        "claim_id": "run-synthetic-failures:claim:1",
+        "text": "WidgetForge Pro costs $49 per month (the agent states a price its only pricing fetch never contained \u2014 the 403 catch)",
+        "answer_span": {
+          "start": 26,
+          "end": 143
+        },
+        "normalized_claim": "WidgetForge Pro costs $49 per month (the agent states a price its only pricing fetch never contained \u2014 the 403 catch)",
+        "context_prefix": "",
+        "citations": [],
+        "answer_sha256": "4c23e03fa2c2b38212ac0863ea86e79ab7abc38b99139db859d0e85208bd5fb8",
+        "method": "DETERMINISTIC",
+        "binding_errors": [],
+        "bound_fetch_indices": [],
+        "passages": [],
+        "absence": "No cited evidence; no URL inferred from question assignment or relied_on.",
+        "verdict": "UNSUPPORTED",
+        "needs_judge": false,
+        "reason": "No citation supplied for this claim."
+      },
+      {
+        "claim_id": "run-synthetic-failures:claim:2",
+        "text": "includes 1200 requests per month (from a 7-hour-old cache).",
+        "answer_span": {
+          "start": 148,
+          "end": 207
+        },
+        "normalized_claim": "WidgetForge Pro includes 1200 requests per month (from a 7-hour-old cache)",
+        "context_prefix": "WidgetForge Pro ",
+        "citations": [],
+        "answer_sha256": "4c23e03fa2c2b38212ac0863ea86e79ab7abc38b99139db859d0e85208bd5fb8",
+        "method": "DETERMINISTIC",
+        "binding_errors": [],
+        "bound_fetch_indices": [],
+        "passages": [],
+        "absence": "No cited evidence; no URL inferred from question assignment or relied_on.",
+        "verdict": "UNSUPPORTED",
+        "needs_judge": false,
+        "reason": "No citation supplied for this claim."
+      }
+    ],
+    "extraction": {
+      "method": "rule-based-v1",
+      "limits": [
+        "Rule-based prose candidates, not a claim-completeness guarantee; tables, ellipsis, pronouns, multilingual text and nested assertions may need review.",
+        "Unresolved semantics are UNSUPPORTED by deterministic checks, not a proof that no passage entails the claim; needs_judge identifies this residue.",
+        "Explicit inline/reference citations or a run citation map are required; question assignment and relied_on do not invent citations."
+      ]
+    }
+  }
+]

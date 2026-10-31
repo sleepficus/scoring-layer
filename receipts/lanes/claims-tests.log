@@ -1,0 +1,37 @@
+test_capture_attribution_map_is_data_only (tests.test_claims.TestBindingAndSupport) ... ok
+test_comma_number_variant_matches (tests.test_claims.TestBindingAndSupport) ... ok
+test_conflicting_cited_documents_are_explicit (tests.test_claims.TestBindingAndSupport) ... ok
+test_different_scalar_value_is_contradicted (tests.test_claims.TestBindingAndSupport) ... ok
+test_error_response_cannot_support (tests.test_claims.TestBindingAndSupport) ... ok
+test_exact_support_has_actual_offsets_and_hash (tests.test_claims.TestBindingAndSupport) ... ok
+test_fragment_binds_same_document_query_does_not (tests.test_claims.TestBindingAndSupport) ... ok
+test_inline_link (tests.test_claims.TestBindingAndSupport) ... ok
+test_negated_or_qualified_source_does_not_support (tests.test_claims.TestBindingAndSupport) ... ok
+test_other_subject_does_not_contradict_or_support (tests.test_claims.TestBindingAndSupport) ... ok
+test_paraphrase_is_honest_semantic_residue (tests.test_claims.TestBindingAndSupport) ... ok
+test_uncited_legacy_answer_is_not_inferred_from_fetch (tests.test_claims.TestBindingAndSupport) ... ok
+test_unfetched_citation_does_not_borrow_other_source (tests.test_claims.TestBindingAndSupport) ... ok
+test_unknown_reference_is_recorded (tests.test_claims.TestBindingAndSupport) ... ok
+test_citation_after_period_attaches (tests.test_claims.TestExtraction) ... ok
+test_compound_claim_inherits_subject_with_raw_span_intact (tests.test_claims.TestExtraction) ... ok
+test_does_not_split_decimal_or_url (tests.test_claims.TestExtraction) ... ok
+test_empty_answer_has_zero_measured_claims (tests.test_claims.TestExtraction) ... ok
+test_exact_spans_and_stable_ids (tests.test_claims.TestExtraction) ... ok
+test_later_uncited_clause_does_not_inherit_earlier_citation (tests.test_claims.TestExtraction) ... ok
+test_reference_definitions_do_not_become_claims (tests.test_claims.TestExtraction) ... ok
+test_separately_cited_clauses_do_not_borrow_sources (tests.test_claims.TestExtraction) ... ok
+test_supplied_claim_list_cannot_hide_answer (tests.test_claims.TestExtraction) ... ok
+test_unknown_claim_citation_id_rejected (tests.test_claims.TestExtraction) ... ok
+test_cannot_judge_deterministic_exact_support (tests.test_claims.TestJudge) ... ok
+test_duplicate_or_unknown_judge_claim_rejected (tests.test_claims.TestJudge) ... ok
+test_invented_passage_rejected (tests.test_claims.TestJudge) ... ok
+test_judge_counts_never_replace_deterministic (tests.test_claims.TestJudge) ... ok
+test_missing_provenance_rejected (tests.test_claims.TestJudge) ... ok
+test_supported_without_passage_rejected (tests.test_claims.TestJudge) ... ok
+test_uncited_passage_rejected (tests.test_claims.TestJudge) ... ok
+test_unsupported_requires_absence (tests.test_claims.TestJudge) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.007s
+
+OK
