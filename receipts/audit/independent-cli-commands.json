@@ -1,0 +1,208 @@
+[
+  {
+    "name": "original-run",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "fixtures/synthetic_firecrawl.json",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/original.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-original-run.log"
+  },
+  {
+    "name": "original-verify",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/original.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-original-verify.log"
+  },
+  {
+    "name": "original-precision",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/original.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-original-precision.log"
+  },
+  {
+    "name": "demo-run",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "fixtures/session2_claim_support.json",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/demo.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-demo-run.log"
+  },
+  {
+    "name": "demo-verify",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/demo.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-demo-verify.log"
+  },
+  {
+    "name": "demo-precision",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/demo.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-demo-precision.log"
+  },
+  {
+    "name": "judge-run",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "fixtures/session2_judge_demo.json",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/judge.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-judge-run.log"
+  },
+  {
+    "name": "judge-verify",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/judge.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-judge-verify.log"
+  },
+  {
+    "name": "judge-precision",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/judge.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-judge-precision.log"
+  },
+  {
+    "name": "live-run",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "receipts/live-keyless-capture.json",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/live.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-live-run.log"
+  },
+  {
+    "name": "live-verify",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/live.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-live-verify.log"
+  },
+  {
+    "name": "live-precision",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/live.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-live-precision.log"
+  },
+  {
+    "name": "legacy-run",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "run",
+      "--pack",
+      "fixtures/synthetic_firecrawl.json",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/legacy.jsonl",
+      "--session1"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-legacy-run.log"
+  },
+  {
+    "name": "legacy-verify",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "verify",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/legacy.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-legacy-verify.log"
+  },
+  {
+    "name": "legacy-precision",
+    "command": [
+      "/Users/carrie/.pyenv/versions/3.12.7/bin/python3.12",
+      "-m",
+      "scoring.cli",
+      "precision-demo",
+      "--chain",
+      "/var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/scoring-independent-audit-aocl4ks4/legacy.jsonl"
+    ],
+    "exit_code": 0,
+    "log": "receipts/audit/cli-legacy-precision.log"
+  }
+]
