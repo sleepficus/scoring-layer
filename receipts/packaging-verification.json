@@ -1,0 +1,11 @@
+{
+  "source": "isolated final delivery tree",
+  "test_command": "python3.12 -m unittest discover -s tests -v",
+  "test_exit": 0,
+  "included_source_matches_audited_hashes": true,
+  "excluded_intermediate_archives": [
+    "receipts/lanes/capture-provenance-before.zip",
+    "receipts/pre-audit-repair-source.zip"
+  ],
+  "network_requests": 0
+}
