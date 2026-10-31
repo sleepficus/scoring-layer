@@ -1,0 +1,166 @@
+{
+  "synthetic": true,
+  "recovery_note": "Recovered normalized content from supplied v2 chain; not an original-byte copy of the omitted fixture. response.success is a reconstructed wrapper field ignored by the Session1 loader.",
+  "task_card": {
+    "cost_bound": {
+      "max_credits": 10,
+      "max_tokens": 20000
+    },
+    "freshness_bound_hours": 1,
+    "id": "synthetic-widgetforge-research-v1",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What does WidgetForge Pro cost per month?",
+        "required_elements": [
+          "WidgetForge Pro",
+          "$49 per month"
+        ]
+      },
+      {
+        "id": "q2",
+        "question": "How many API requests per month does WidgetForge Pro include?",
+        "required_elements": [
+          "WidgetForge Pro",
+          "1,200 requests"
+        ]
+      }
+    ],
+    "skin": "firecrawl-first-skin",
+    "title": "SYNTHETIC fixture task \u2014 WidgetForge pricing and limits (invented company)"
+  },
+  "runs": [
+    {
+      "run_id": "run-synthetic-clean",
+      "agent_label": "fixture-agent (synthetic)",
+      "started_at": "2026-10-27T16:00:00Z",
+      "final_answer": "SYNTHETIC fixture answer: WidgetForge Pro costs $49 per month and includes 1,200 requests per month.",
+      "fetches": [
+        {
+          "url": "https://widgetforge.invalid/pricing",
+          "relied_on": true,
+          "question_ids": [
+            "q1"
+          ],
+          "tokensUsed": 800,
+          "response": {
+            "success": true,
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# WidgetForge Pricing\n\nWidgetForge Pro \u2014 $49 per month.\nWidgetForge Starter \u2014 $19 per month.",
+              "metadata": {
+                "statusCode": 200,
+                "cacheState": "miss",
+                "cachedAt": "2026-10-27T15:55:00Z",
+                "sourceURL": "https://widgetforge.invalid/pricing"
+              }
+            }
+          }
+        },
+        {
+          "url": "https://widgetforge.invalid/docs/limits",
+          "relied_on": true,
+          "question_ids": [
+            "q2"
+          ],
+          "tokensUsed": 600,
+          "response": {
+            "success": true,
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# WidgetForge API Limits\n\nWidgetForge Pro includes 1,200 requests per month. Overage is billed per 1,000 requests.",
+              "metadata": {
+                "statusCode": 200,
+                "cacheState": "hit",
+                "cachedAt": "2026-10-27T15:50:00Z",
+                "sourceURL": "https://widgetforge.invalid/docs/limits"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "run-synthetic-failures",
+      "agent_label": "fixture-agent (synthetic)",
+      "started_at": "2026-10-27T16:00:00Z",
+      "final_answer": "SYNTHETIC fixture answer: WidgetForge Pro costs $49 per month (the agent states a price its only pricing fetch never contained \u2014 the 403 catch) and includes 1200 requests per month (from a 7-hour-old cache).",
+      "fetches": [
+        {
+          "url": "https://widgetforge.invalid/pricing",
+          "relied_on": true,
+          "question_ids": [
+            "q1"
+          ],
+          "tokensUsed": 120,
+          "response": {
+            "success": true,
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# 403 Forbidden\n\nAccess denied. Your request was blocked by the server.",
+              "metadata": {
+                "statusCode": 403,
+                "cacheState": "miss",
+                "cachedAt": "2026-10-27T15:59:00Z",
+                "sourceURL": "https://widgetforge.invalid/pricing"
+              }
+            }
+          }
+        },
+        {
+          "url": "https://widgetforge.invalid/docs/limits",
+          "relied_on": true,
+          "question_ids": [
+            "q2"
+          ],
+          "tokensUsed": 500,
+          "response": {
+            "success": true,
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# WidgetForge API Limits\n\nWidgetForge Pro includes 1200 requests per month.",
+              "metadata": {
+                "statusCode": 200,
+                "cacheState": "hit",
+                "cachedAt": "2026-10-27T09:00:00Z",
+                "sourceURL": "https://widgetforge.invalid/docs/limits"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "human_decisions": [
+    {
+      "decision": "confirm",
+      "flag_id": "run-synthetic-failures:fetch-truth:1",
+      "grader": "fetch-truth",
+      "note": "SYNTHETIC demo decision: the 403-as-document flag is a true catch."
+    },
+    {
+      "decision": "confirm",
+      "flag_id": "run-synthetic-failures:freshness:1",
+      "grader": "freshness",
+      "note": "SYNTHETIC demo decision: the 7-hour-old cache against a 1-hour sealed bound is a true catch."
+    },
+    {
+      "decision": "confirm",
+      "flag_id": "run-synthetic-failures:completeness:1",
+      "grader": "completeness",
+      "note": "SYNTHETIC demo decision: 'WidgetForge Pro' truly is absent from the 403 page the agent relied on."
+    },
+    {
+      "decision": "confirm",
+      "flag_id": "run-synthetic-failures:completeness:2",
+      "grader": "completeness",
+      "note": "SYNTHETIC demo decision: '$49 per month' truly is absent from the 403 page the agent relied on."
+    },
+    {
+      "decision": "kill",
+      "flag_id": "run-synthetic-failures:completeness:3",
+      "grader": "completeness",
+      "note": "SYNTHETIC demo decision \u2014 the planted grader error: the content did carry the fact as '1200 requests'; the grader's exact-string match missed the formatting variant. Flag killed; completeness precision takes the hit on the scorecard, honestly."
+    }
+  ]
+}

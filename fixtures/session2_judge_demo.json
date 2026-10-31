@@ -1,0 +1,110 @@
+{
+  "synthetic": true,
+  "demo_note": "Synthetic judge-import example only. This is not evidence of an actual judge run. Deterministic 2/2/1 stays unchanged; one separately labeled JUDGE support row resolves the monthly paraphrase.",
+  "task_card": {
+    "cost_bound": {
+      "max_credits": 10,
+      "max_tokens": 20000
+    },
+    "freshness_bound_hours": 1,
+    "id": "synthetic-claim-support-session2-v1",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What does WidgetForge Pro cost per month?",
+        "required_elements": [
+          "WidgetForge Pro",
+          "$49 per month"
+        ]
+      },
+      {
+        "id": "q2",
+        "question": "How many API requests per month does WidgetForge Pro include?",
+        "required_elements": [
+          "WidgetForge Pro",
+          "1,200 requests"
+        ]
+      }
+    ],
+    "skin": "firecrawl-first-skin",
+    "title": "SYNTHETIC Session 2 claim-support demonstration",
+    "description": "Invented evidence and decisions. Includes supported, contradicted, absent and a known conservative semantic miss; no claim of grader accuracy on real tasks."
+  },
+  "runs": [
+    {
+      "run_id": "run-synthetic-session2-judge",
+      "agent_label": "synthetic fixture agent",
+      "started_at": "2026-10-27T16:00:00Z",
+      "final_answer": "WidgetForge Pro costs $49 per month [1].\nWidgetForge Pro includes 1,200 requests per month [2].\nWidgetForge Pro costs $59 per month [1].\nWidgetForge Pro supports offline mode [2].\nWidgetForge Pro costs $49 monthly [1].",
+      "fetches": [
+        {
+          "url": "https://widgetforge.invalid/pricing",
+          "relied_on": true,
+          "question_ids": [
+            "q1"
+          ],
+          "tokensUsed": 800,
+          "response": {
+            "success": true,
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page]\n# WidgetForge Pricing\nWidgetForge Pro costs $49 per month.",
+              "metadata": {
+                "statusCode": 200,
+                "cacheState": "miss",
+                "cachedAt": "2026-10-27T15:55:00Z",
+                "sourceURL": "https://widgetforge.invalid/pricing"
+              }
+            }
+          }
+        },
+        {
+          "url": "https://widgetforge.invalid/docs/limits",
+          "relied_on": true,
+          "question_ids": [
+            "q2"
+          ],
+          "tokensUsed": 600,
+          "response": {
+            "success": true,
+            "creditsUsed": 1,
+            "data": {
+              "markdown": "[SYNTHETIC FIXTURE \u2014 invented page, not a real website]\n# WidgetForge API Limits\n\nWidgetForge Pro includes 1,200 requests per month. Overage is billed per 1,000 requests.",
+              "metadata": {
+                "statusCode": 200,
+                "cacheState": "hit",
+                "cachedAt": "2026-10-27T15:50:00Z",
+                "sourceURL": "https://widgetforge.invalid/docs/limits"
+              }
+            }
+          }
+        }
+      ],
+      "citations": {
+        "1": "https://widgetforge.invalid/pricing",
+        "2": "https://widgetforge.invalid/docs/limits"
+      },
+      "judge_decisions": [
+        {
+          "claim_id": "run-synthetic-session2-judge:claim:5",
+          "verdict": "SUPPORTED",
+          "judge": {
+            "seat": "SYNTHETIC demonstration judge; not a real review",
+            "model": "SYNTHETIC fixture",
+            "reviewed_at": "2026-10-27T16:01:00Z"
+          },
+          "reasoning": "SYNTHETIC demonstration: monthly and per month denote the same billing interval. Exact supporting source passage retained.",
+          "passages": [
+            {
+              "fetch_index": 0,
+              "start": 58,
+              "end": 94,
+              "text": "WidgetForge Pro costs $49 per month."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "human_decisions": []
+}
