@@ -1,0 +1,13 @@
+{
+  "FINDINGS.md": "035592f3e7acbc5a6a8ebcd998f32ac0a62e2bfabbcc38cd22a30b75bbc3752a",
+  "initial-source-hashes.json": "b74e0668624f0fffe5c905300a05ae4f66e92a2a23e71fb6127402d665ed1ea6",
+  "independent-suite.log": "adc89505b8bff7c43b4b2b83dc66f4efd50d7753f780b6d7d0933b93fbfb9912",
+  "independent-cli-commands.json": "8d1f81681855a6ec8dc2ea59ed9d57adf98bb7474cb87a3b49bb5a445ad4634f",
+  "claim_adversarial_probes.py": "e125d283ac3e306bd88fa0f2380cd1cb17cecc96285f71bdf97ae41aeb642a06",
+  "claim-adversarial-before.log": "36a65d7efe0d96992002e2bcee2fd2d299d9b6a8c88e2c1dcabae83481697bf1",
+  "citation-leak-cli-before.log": "5271c7bbf8b7b476f4a11c2a079f61156d327de307ac65d9761422668a127da9",
+  "claims-observations-before.json": "3e2acb1f89af00772d6011f13fb487101810d45835ac2d41a2045bc317efbdf5",
+  "helper-capture-chain-report.md": "540350a3ed0598af9e9544785bb13301221192b5afe9575a3e958fc34ad136c8",
+  "helper-capture-chain-results.json": "708b310c6330f1cc29ee77381ee1f6d2051aee3555595fe65a99da62e652be08",
+  "helper-historical-fixture-equality.json": "307c7ec9e7bc205b76de4bf53d8ea0de901d768caccd64a359419d8abec6b41e"
+}

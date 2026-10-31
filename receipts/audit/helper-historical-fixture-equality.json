@@ -1,0 +1,27 @@
+{
+  "audit": "Independent read-only historical-loader reconstruction check",
+  "archive": "/tmp/codex-remote-attachments/01a180b1-8a3c-78e1-b1e6-c4e662ad1455/61A4CFF7-E580-4026-B7A0-3A58DD319AAA/1-scoring-session2-handoff-ALL-IN-ONE-2026-10-27.zip",
+  "archive_sha256": "a293743859b4811ed821afe522b75013b055d60de04c038b927b59d629407ede",
+  "original_capture_path": "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py",
+  "original_capture_sha256": "20184e346f7687325c37b5f7b9234ab30e415ef11d370f34b0fb4305fab9183b",
+  "original_capture_equal_zip_entry": true,
+  "original_chain_equal_zip_entry": true,
+  "original_archive_fixture_entries": [],
+  "original_chain_sha256": "a4be29b831c6b1d4302b319c9623476491290b528ca68543a933367098a6fa4a",
+  "workspace_chain_sha256": "a4be29b831c6b1d4302b319c9623476491290b528ca68543a933367098a6fa4a",
+  "reconstructed_fixture_sha256": "5a347fbd509b92c1ef76ec25c5c4e36e3011d35e56ddddd3b3c06f73dc005076",
+  "chain_verification": {
+    "ok": true,
+    "records": 10,
+    "first_bad_seq": null,
+    "error": null
+  },
+  "run_records_equal": true,
+  "task_card_equal": true,
+  "human_decisions_equal": true,
+  "run_count": 2,
+  "human_decision_count": 5,
+  "network_calls": 0,
+  "originals_modified": false,
+  "runtime": "3.12.7 (main, Jul 11 2026, 00:44:18) [Clang 14.0.3 (clang-1403.0.22.14.1)]"
+}
