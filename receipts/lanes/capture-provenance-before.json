@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-28T04:17:23.561203+00:00",
+  "network_requests": 0,
+  "synthetic_http_only": true,
+  "restore_check": "The supplied Session 1 snapshot predates live capture. Restoring it cannot retain Session 2 capture or fix its newly found binding checks. Current candidate source preserved before focused repair.",
+  "pre_repair_probes": {
+    "citations-change": "ACCEPTED (defect reproduced)",
+    "citations-omit": "ACCEPTED (defect reproduced)",
+    "judge-add": "ACCEPTED (defect reproduced)",
+    "started-at-change": "ACCEPTED (defect reproduced)"
+  },
+  "backup": {
+    "file": "receipts/lanes/capture-provenance-before.zip",
+    "sha256": "65e55b516f309d9ba715d859f4e68a9ec56eb67a9df76001ce6819e096328f1f"
+  }
+}
