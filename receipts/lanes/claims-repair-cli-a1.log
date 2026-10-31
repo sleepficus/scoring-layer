@@ -1,0 +1,67 @@
+Session 2 claim-support pipeline
+Task card sealed: b60543331f405125d212bdfa62f749ba12b7602db2db14a402dd40d79bf4998f
+  appended to chain as seq 1
+
+========================================================================
+SCORING LAYER — RUN SCORECARD
+DATA: SYNTHETIC FIXTURE — invented pages, prices, and responses. Not real Firecrawl output.
+Run:        run-synthetic-session2  (agent: synthetic fixture agent)
+Task card:  synthetic-claim-support-session2-v1 — SYNTHETIC Session 2 claim-support demonstration
+Card seal:  b60543331f405125d212bdfa62f749ba12b7602db2db14a402dd40d79bf4998f  (sealed 2026-10-27T15:55:00Z)
+Started at: 2026-10-27T16:00:00Z
+Chain:      task_card seq 1, run seq 2, verdicts seq 3
+Flags: DETERMINISTIC 1; JUDGE 0 (each receipt below; no composite score)
+
+-- Fetch truth (grader: fetch-truth) --
+Relied-on fetches: 2 of 2 total; flags: 0
+
+-- Freshness (grader: freshness) --
+Sealed freshness bound: 1h; flags: 0
+
+-- Completeness (grader: completeness) --
+Required elements: 4; present: 4; missing: 0; flags: 0
+  q1: present=['WidgetForge Pro', '$49 per month']
+  q1: missing=[]
+  q2: present=['WidgetForge Pro', '1,200 requests']
+  q2: missing=[]
+
+-- Cost truth (grader: cost-truth) --
+Credits spent: 2 (bound 10); tokens spent: 1400 (bound 20000)
+Historical Session 1 denominator — required elements found in consumed content: 4 of 4; credits per present element: 0.5; tokens per present element: 350.0
+  https://widgetforge.invalid/pricing: 1 credits, 800 tokens
+  https://widgetforge.invalid/docs/limits: 1 credits, 600 tokens
+Captured fetch spend only; answer-generation tokens and any separate judge-seat cost are UNKNOWN.
+  DETERMINISTIC supported-claim denominator: 1; credits per supported claim: 2.0; tokens per supported claim: 1400.0
+  JUDGE supported-claim denominator: 0; credits per supported claim: n/a; tokens per supported claim: n/a
+Flags: 0
+
+-- Claim support (grader: claim-support) --
+DETERMINISTIC: 1 SUPPORTED; 1 UNSUPPORTED; 0 CONTRADICTED; 2 total
+JUDGE: 0 SUPPORTED; 0 UNSUPPORTED; 0 CONTRADICTED; 0 total
+Extraction receipt: {"limits": ["Rule-based prose candidates, not a claim-completeness guarantee; tables, ellipsis, pronouns, multilingual text and nested assertions may need review.", "Unresolved semantics are UNSUPPORTED by deterministic checks, not a proof that no passage entails the claim; needs_judge identifies this residue.", "Explicit inline/reference citations or a run citation map are required; question assignment and relied_on do not invent citations."], "method": "rule-based-v1"}
+  DETERMINISTIC run-synthetic-session2:claim:1: SUPPORTED
+    answer: WidgetForge Pro costs $49 per month.
+    answer span: {"end": 36, "start": 0}; answer SHA-256: 3507b8adb30ac247fbd3187492ae91090f275096f6b36649813e94e74c7e3ad4
+    citations: [{"reference": "[1]", "url": "https://widgetforge.invalid/pricing"}]
+    reason: Complete statement or narrow subject/relation/value assertion matches a cited captured passage.
+    passage receipt: {"document_sha256": "e5940e9a62b09266aecace6c9c42107069c52e27a8eccc39a4421fe850cecdc3", "end": 36, "fetch_index": 0, "start": 0, "text": "WidgetForge Pro costs $49 per month.", "url": "https://widgetforge.invalid/pricing"}
+  DETERMINISTIC run-synthetic-session2:claim:2: UNSUPPORTED
+    answer: WidgetForge Pro includes 1200 requests per month.
+    answer span: {"end": 90, "start": 41}; answer SHA-256: 3507b8adb30ac247fbd3187492ae91090f275096f6b36649813e94e74c7e3ad4
+    citations: []
+    reason: No citation supplied for this claim.
+    absence: "No cited evidence; no URL inferred from question assignment or relied_on."
+  FLAG run-synthetic-session2:claim:2:claim-support
+    criterion: Each factual claim must be supported by its cited captured evidence.
+    subject:   WidgetForge Pro includes 1200 requests per month.
+    evidence:  {"absence": "No cited evidence; no URL inferred from question assignment or relied_on.", "answer_sha256": "3507b8adb30ac247fbd3187492ae91090f275096f6b36649813e94e74c7e3ad4", "answer_span": {"end": 90, "start": 41}, "binding_errors": [], "bound_fetch_indices": [], "citations": [], "claim_id": "run-synthetic-session2:claim:2", "context_prefix": "", "method": "DETERMINISTIC", "needs_judge": false, "normalized_claim": "WidgetForge Pro includes 1200 requests per month", "passages": [], "reason": "No citation supplied for this claim.", "text": "WidgetForge Pro includes 1200 requests per month.", "verdict": "UNSUPPORTED"}
+========================================================================
+DETERMINISTIC REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  claim-support: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+JUDGE REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 0 pending)
+
+Chain after run: 3 records, verify ok=True
