@@ -1,0 +1,30 @@
+{
+  "capture_status": "COMPLETE",
+  "synthetic": false,
+  "request_count": 1,
+  "started_at": "2026-10-28T04:16:31.650565Z",
+  "finished_at": "2026-10-28T04:16:31.981304Z",
+  "http_status": 200,
+  "response_bytes": 1807,
+  "response_sha256": "a71109267a1c99c98a2d5f0875aad0bacd286b7024b7bd2a5a660fed4249cfa3",
+  "capture_file_sha256": "63edd1c8ee1555e474b39250a17f8d817166f52245daeb4674a92e4ad9d4cfac",
+  "provider_credits_used": 1,
+  "provider_tokens_used": null,
+  "token_status": "UNKNOWN",
+  "authorization_sent": false,
+  "automatic_retries": 0,
+  "paid_fallback": false,
+  "route": "KEYLESS",
+  "sources": [
+    "https://docs.firecrawl.dev/rate-limits#keyless-no-api-key",
+    "https://docs.firecrawl.dev/capabilities",
+    "https://docs.firecrawl.dev/api-reference/endpoint/scrape"
+  ],
+  "answer_origin": "caller-supplied; capture performs no agent generation",
+  "limitations": [
+    "One public page, one request; not a capacity or accuracy evaluation.",
+    "Provider reports a cached hit; cachedAt is preserved, not relabeled a fresh origin fetch.",
+    "Provider tokens and agent-generation tokens unmeasured.",
+    "Stored hashes establish byte consistency, not unforgeable network provenance."
+  ]
+}
