@@ -1,0 +1,14 @@
+test_a1_postsentence_reference_does_not_bind_following_uncited_sentence (__main__.IndependentClaimChecks.test_a1_postsentence_reference_does_not_bind_following_uncited_sentence) ... ok
+test_a2_equal_decimal_price_is_not_contradiction (__main__.IndependentClaimChecks.test_a2_equal_decimal_price_is_not_contradiction) ... ok
+test_a3_factual_markdown_heading_is_measured (__main__.IndependentClaimChecks.test_a3_factual_markdown_heading_is_measured) ... ok
+test_a4_source_qualification_markers_are_not_erased_into_support (__main__.IndependentClaimChecks.test_a4_source_qualification_markers_are_not_erased_into_support) ... ok
+test_different_value_contradiction_control (__main__.IndependentClaimChecks.test_different_value_contradiction_control) ... ok
+test_exact_cited_support_control (__main__.IndependentClaimChecks.test_exact_cited_support_control) ... ok
+test_judge_invented_passage_control (__main__.IndependentClaimChecks.test_judge_invented_passage_control) ... ok
+test_qualified_inline_source_control (__main__.IndependentClaimChecks.test_qualified_inline_source_control) ... ok
+test_uncited_statement_control (__main__.IndependentClaimChecks.test_uncited_statement_control) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+OK
