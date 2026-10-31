@@ -1,0 +1,5 @@
+{
+  "audit_verdict": "PASS_BOUNDED_SESSION2_CANDIDATE_AFTER_REPAIRS",
+  "all_audited_source_test_and_original_evidence_hashes_match": true,
+  "files_verified": 24
+}
