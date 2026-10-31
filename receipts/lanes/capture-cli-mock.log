@@ -1,0 +1,94 @@
+SYNTHETIC HTTP SURFACE TEST. No live Firecrawl request; mocked body.
+{
+  "synthetic_http_only": true,
+  "network_requests": 0,
+  "capture_exit": 0,
+  "grade_exit": 0,
+  "verify_exit": 0,
+  "precision_exit": 0,
+  "receipt_transport": "SYNTHETIC_TEST_TRANSPORT",
+  "captured_packet_synthetic": true,
+  "chain_record_count": 3,
+  "chain_raw_receipts": 1,
+  "chain_claims": 1
+}
+
+STDOUT
+Live capture status: COMPLETE
+Capture receipt: /var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmpmgck27av/capture.json
+Grade the captured data with: python3 -m scoring.cli run --pack /var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmpmgck27av/capture.json --chain <new-chain-path>
+Session 2 claim-support pipeline
+Task card sealed: 20ccd4802daf3e424313f5bcdb9f1655fe35860771ea7254cf86f48ea2f90d3b
+  appended to chain as seq 1
+
+========================================================================
+SCORING LAYER — RUN SCORECARD
+DATA: SYNTHETIC FIXTURE — invented pages, prices, and responses. Not real Firecrawl output.
+Run:        mock-capture-v1  (agent: synthetic-test-agent)
+Task card:  synthetic-live-boundary-v1 — SYNTHETIC mock HTTP test
+Card seal:  20ccd4802daf3e424313f5bcdb9f1655fe35860771ea7254cf86f48ea2f90d3b  (sealed 2026-10-28T04:14:44.266900Z)
+Started at: 2026-10-28T04:14:44.266900Z
+Chain:      task_card seq 1, run seq 2, verdicts seq 3
+Flags: DETERMINISTIC 2; JUDGE 0 (each receipt below; no composite score)
+
+-- Fetch truth (grader: fetch-truth) --
+Relied-on fetches: 1 of 1 total; flags: 0
+
+-- Freshness (grader: freshness) --
+Sealed freshness bound: 1h; flags: 1
+  FLAG mock-capture-v1:freshness:1
+    criterion: A relied-on document must carry a cachedAt inside the sealed freshness bound; no cachedAt means freshness cannot be verified.
+    subject:   https://widgetforge.invalid/pricing
+    evidence:  {"bound_hours": 1, "cachedAt": null, "question_ids": ["q1"]}
+
+-- Completeness (grader: completeness) --
+Required elements: 1; present: 1; missing: 0; flags: 0
+  q1: present=['$49 per month']
+  q1: missing=[]
+
+-- Cost truth (grader: cost-truth) --
+Credits spent: UNKNOWN (bound 2); tokens spent: UNKNOWN (bound 100)
+Historical Session 1 denominator — required elements found in consumed content: 1 of 1; credits per present element: n/a; tokens per present element: n/a
+  https://widgetforge.invalid/pricing: n/a credits, n/a tokens
+Captured fetch spend only; answer-generation tokens and any separate judge-seat cost are UNKNOWN.
+  DETERMINISTIC supported-claim denominator: 1; credits per supported claim: n/a; tokens per supported claim: n/a
+  JUDGE supported-claim denominator: 0; credits per supported claim: n/a; tokens per supported claim: n/a
+Flags: 1
+  FLAG mock-capture-v1:cost-truth:1
+    criterion: Captured spend must be known to verify the sealed cost bound; unknown metering is UNVERIFIABLE, never zero or a pass.
+    subject:   mock-capture-v1
+    evidence:  {"cost_bound": {"max_credits": 2, "max_tokens": 100}, "credits_per_verified_fact": null, "per_fetch": [{"creditsUsed": null, "tokensUsed": null, "url": "https://widgetforge.invalid/pricing"}], "required_facts": 1, "status": "UNVERIFIABLE", "tokens_per_verified_fact": null, "total_credits": null, "total_tokens": null, "unknown_units": ["credits", "tokens"], "verified_facts": 1}
+
+-- Claim support (grader: claim-support) --
+DETERMINISTIC: 1 SUPPORTED; 0 UNSUPPORTED; 0 CONTRADICTED; 1 total
+JUDGE: 0 SUPPORTED; 0 UNSUPPORTED; 0 CONTRADICTED; 0 total
+Extraction receipt: {"limits": ["Rule-based prose candidates, not a claim-completeness guarantee; tables, ellipsis, pronouns, multilingual text and nested assertions may need review.", "Unresolved semantics are UNSUPPORTED by deterministic checks, not a proof that no passage entails the claim; needs_judge identifies this residue.", "Explicit inline/reference citations or a run citation map are required; question assignment and relied_on do not invent citations."], "method": "rule-based-v1"}
+  DETERMINISTIC mock-capture-v1:claim:1: SUPPORTED
+    answer: WidgetForge Pro costs $49 per month.
+    answer span: {"end": 36, "start": 0}; answer SHA-256: 590079b123b87af00ae4a912a5c9cf06f601e0eae17239c9331499eaec1e84c4
+    citations: [{"reference": "[1]", "url": "https://widgetforge.invalid/pricing"}]
+    reason: Complete statement or narrow subject/relation/value assertion matches a cited captured passage.
+    passage receipt: {"document_sha256": "20c59900f07be3448bcd1dd5d5d821c7f4eef4d8576fc1ee1f3ec8af7f0e72d9", "end": 36, "fetch_index": 0, "start": 0, "text": "WidgetForge Pro costs $49 per month.", "url": "https://widgetforge.invalid/pricing"}
+========================================================================
+DETERMINISTIC REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  cost-truth: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+  freshness: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 2 pending)
+JUDGE REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 0 pending)
+
+Chain after run: 3 records, verify ok=True
+Chain /var/folders/3s/x6b8blyn26q6vd2czrz2kwlm0000gn/T/tmpmgck27av/chain.jsonl: 3 records, ok=True, first_bad_seq=None
+Precision from verified chain verdicts and queue_decision records:
+DETERMINISTIC REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  cost-truth: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+  freshness: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 1 pending)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 2 pending)
+JUDGE REVIEW PRECISION (separate method ledger)
+GRADER PRECISION (from human confirm/kill decisions)
+  OVERALL: precision UNVERIFIED — no decisions yet (0 confirmed, 0 killed, 0 pending)
+
+STDERR
