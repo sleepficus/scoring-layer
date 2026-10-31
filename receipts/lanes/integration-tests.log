@@ -1,0 +1,22 @@
+COMMAND: ['/Library/Developer/CommandLineTools/usr/bin/python3', '-m', 'unittest', 'tests.test_session2_pipeline', '-v']
+EXIT: 0
+STDOUT:
+
+STDERR:
+test_card_id_reuse_with_changed_criteria_rejected (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_default_cli_populates_original_fixture_claims_without_inventing_citations (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_duplicate_run_ids_rejected_before_chain_mutation (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_invalid_decisions_leave_new_chain_absent_and_print_no_score (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_invalid_judge_passage_fails_before_mutation (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_judge_supported_claim_stays_separate_on_scorecard_and_precision (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_malformed_pack_is_named_error_without_traceback_or_chain (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_mock_live_capture_reaches_cli_with_receipt_body_and_unknown_metering (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_new_synthetic_pack_plugs_in_without_core_changes (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_repeated_run_id_cannot_alias_existing_flags_or_decisions (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_session1_remains_explicit_and_has_historical_counts (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+test_unknown_live_spend_does_not_turn_into_zero_or_cost_pass (tests.test_session2_pipeline.TestSession2Pipeline) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.083s
+
+OK

@@ -1,0 +1,6 @@
+COMMAND: ['/Library/Developer/CommandLineTools/usr/bin/python3', '-m', 'scoring.cli', 'verify', '--chain', '/Users/carrie/my-project/scoring-layer-session2/receipts/lanes/integration-original-chain.jsonl']
+EXIT: 0
+STDOUT:
+Chain /Users/carrie/my-project/scoring-layer-session2/receipts/lanes/integration-original-chain.jsonl: 10 records, ok=True, first_bad_seq=None
+
+STDERR:
