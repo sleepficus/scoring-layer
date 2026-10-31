@@ -1,0 +1,683 @@
+test_f1_append_to_old_format_chain_refused (test_audit_fixes.TestF1HashCoverage.test_f1_append_to_old_format_chain_refused) ... ok
+test_f1_old_format_chain_rejected_not_misverified (test_audit_fixes.TestF1HashCoverage.test_f1_old_format_chain_rejected_not_misverified) ... ok
+test_f1_seq_tamper_breaks_verify (test_audit_fixes.TestF1HashCoverage.test_f1_seq_tamper_breaks_verify) ... ok
+test_f1_timestamp_tamper_breaks_verify (test_audit_fixes.TestF1HashCoverage.test_f1_timestamp_tamper_breaks_verify) ... ok
+test_f1_type_tamper_breaks_verify (test_audit_fixes.TestF1HashCoverage.test_f1_type_tamper_breaks_verify) ... ERROR
+test_f2_precision_demo_good_chain_still_scores (test_audit_fixes.TestF2VerifyBeforeScore.test_f2_precision_demo_good_chain_still_scores) ... ERROR
+test_f2_precision_refuses_bad_chain (test_audit_fixes.TestF2VerifyBeforeScore.test_f2_precision_refuses_bad_chain) ... ERROR
+test_f2_verify_command_names_old_format (test_audit_fixes.TestF2VerifyBeforeScore.test_f2_verify_command_names_old_format) ... ok
+test_f3_duplicate_decision_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_duplicate_decision_rejected) ... ERROR
+test_f3_fixture_decisions_still_valid (test_audit_fixes.TestF3DecisionValidation.test_f3_fixture_decisions_still_valid) ... ERROR
+test_f3_missing_flag_id_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_missing_flag_id_rejected) ... ERROR
+test_f3_orphan_decision_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_orphan_decision_rejected) ... ERROR
+test_f3_wrong_grader_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_wrong_grader_rejected) ... ERROR
+test_f4_missing_spend_rejected (test_audit_fixes.TestF4SpendValidation.test_f4_missing_spend_rejected) ... ERROR
+test_f4_missing_tokens_rejected (test_audit_fixes.TestF4SpendValidation.test_f4_missing_tokens_rejected) ... ERROR
+test_f4_negative_spend_cannot_cancel_overspend (test_audit_fixes.TestF4SpendValidation.test_f4_negative_spend_cannot_cancel_overspend) ... ERROR
+test_f4_non_numeric_spend_rejected (test_audit_fixes.TestF4SpendValidation.test_f4_non_numeric_spend_rejected) ... ERROR
+test_f4_valid_fixture_still_loads (test_audit_fixes.TestF4SpendValidation.test_f4_valid_fixture_still_loads) ... ERROR
+test_f5_complete_envelope_still_verifies (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_complete_envelope_still_verifies) ... ERROR
+test_f5_incomplete_envelope_fails (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_incomplete_envelope_fails) ... ERROR
+test_f5_invalid_timestamp_fails (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_invalid_timestamp_fails) ... ERROR
+test_f5_wrong_algorithm_fails (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_wrong_algorithm_fails) ... ERROR
+test_f6_precision_lists_decision_receipts (test_audit_fixes.TestF6DecisionReceipts.test_f6_precision_lists_decision_receipts) ... ok
+test_append_and_verify (test_chain.TestChain.test_append_and_verify) ... ok
+test_empty_chain_verifies (test_chain.TestChain.test_empty_chain_verifies) ... ok
+test_tampered_payload_is_detected (test_chain.TestChain.test_tampered_payload_is_detected) ... ok
+test_unknown_record_type_refused (test_chain.TestChain.test_unknown_record_type_refused) ... ok
+test_fixture_refuses_unlabeled_data (test_end_to_end.TestEndToEnd.test_fixture_refuses_unlabeled_data) ... ERROR
+test_full_pipeline_over_fixtures (test_end_to_end.TestEndToEnd.test_full_pipeline_over_fixtures) ... ERROR
+test_clean_run_produces_zero_flags (test_graders.TestCleanRun.test_clean_run_produces_zero_flags) ... ERROR
+test_missing_elements_flagged_with_receipts (test_graders.TestCompleteness.test_missing_elements_flagged_with_receipts) ... ERROR
+test_planted_formatting_variant_flag_exists (test_graders.TestCompleteness.test_planted_formatting_variant_flag_exists) ... ERROR
+test_cost_per_verified_fact_arithmetic (test_graders.TestCostTruth.test_cost_per_verified_fact_arithmetic) ... ERROR
+test_over_bound_spend_is_flagged (test_graders.TestCostTruth.test_over_bound_spend_is_flagged) ... ERROR
+test_403_delivered_as_document_is_caught (test_graders.TestFetchTruth.test_403_delivered_as_document_is_caught) ... ERROR
+test_block_page_under_200_is_caught_by_shape (test_graders.TestFetchTruth.test_block_page_under_200_is_caught_by_shape) ... ERROR
+test_unrelied_fetch_is_not_flagged (test_graders.TestFetchTruth.test_unrelied_fetch_is_not_flagged) ... ERROR
+test_fresh_cache_passes (test_graders.TestFreshness.test_fresh_cache_passes) ... ERROR
+test_seven_hour_cache_against_one_hour_bound_is_caught (test_graders.TestFreshness.test_seven_hour_cache_against_one_hour_bound_is_caught) ... ERROR
+test_fixture_demonstration_numbers (test_precision.TestPrecision.test_fixture_demonstration_numbers) ... ERROR
+test_known_confirm_kill_set (test_precision.TestPrecision.test_known_confirm_kill_set) ... ok
+test_no_decisions_is_unverified_not_perfect (test_precision.TestPrecision.test_no_decisions_is_unverified_not_perfect) ... ok
+test_pending_flags_counted_from_flag_list (test_precision.TestPrecision.test_pending_flags_counted_from_flag_list) ... ok
+test_unknown_decision_refused (test_precision.TestPrecision.test_unknown_decision_refused) ... ok
+test_fresh_seal_verifies (test_sealing.TestSealing.test_fresh_seal_verifies) ... ERROR
+test_tampered_freshness_bound_detected (test_sealing.TestSealing.test_tampered_freshness_bound_detected) ... ERROR
+test_tampered_question_text_detected (test_sealing.TestSealing.test_tampered_question_text_detected) ... ERROR
+test_tampered_required_element_detected (test_sealing.TestSealing.test_tampered_required_element_detected) ... ERROR
+test_tampered_seal_value_detected (test_sealing.TestSealing.test_tampered_seal_value_detected) ... ERROR
+
+======================================================================
+ERROR: test_f1_type_tamper_breaks_verify (test_audit_fixes.TestF1HashCoverage.test_f1_type_tamper_breaks_verify)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 66, in test_f1_type_tamper_breaks_verify
+    _build_demo_chain(self.path)
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 41, in _build_demo_chain
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f2_precision_demo_good_chain_still_scores (test_audit_fixes.TestF2VerifyBeforeScore.test_f2_precision_demo_good_chain_still_scores)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 155, in test_f2_precision_demo_good_chain_still_scores
+    _build_demo_chain(self.path)
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 41, in _build_demo_chain
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f2_precision_refuses_bad_chain (test_audit_fixes.TestF2VerifyBeforeScore.test_f2_precision_refuses_bad_chain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 141, in test_f2_precision_refuses_bad_chain
+    _build_demo_chain(self.path)
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 41, in _build_demo_chain
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f3_duplicate_decision_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_duplicate_decision_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 174, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f3_fixture_decisions_still_valid (test_audit_fixes.TestF3DecisionValidation.test_f3_fixture_decisions_still_valid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 174, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f3_missing_flag_id_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_missing_flag_id_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 174, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f3_orphan_decision_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_orphan_decision_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 174, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f3_wrong_grader_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_wrong_grader_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 174, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f4_missing_spend_rejected (test_audit_fixes.TestF4SpendValidation.test_f4_missing_spend_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 234, in test_f4_missing_spend_rejected
+    self._load_mutated(mutate)
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 222, in _load_mutated
+    raw = json.loads(FIXTURE.read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f4_missing_tokens_rejected (test_audit_fixes.TestF4SpendValidation.test_f4_missing_tokens_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 242, in test_f4_missing_tokens_rejected
+    self._load_mutated(mutate)
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 222, in _load_mutated
+    raw = json.loads(FIXTURE.read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f4_negative_spend_cannot_cancel_overspend (test_audit_fixes.TestF4SpendValidation.test_f4_negative_spend_cannot_cancel_overspend)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 251, in test_f4_negative_spend_cannot_cancel_overspend
+    self._load_mutated(mutate)
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 222, in _load_mutated
+    raw = json.loads(FIXTURE.read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f4_non_numeric_spend_rejected (test_audit_fixes.TestF4SpendValidation.test_f4_non_numeric_spend_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 259, in test_f4_non_numeric_spend_rejected
+    self._load_mutated(mutate)
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 222, in _load_mutated
+    raw = json.loads(FIXTURE.read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f4_valid_fixture_still_loads (test_audit_fixes.TestF4SpendValidation.test_f4_valid_fixture_still_loads)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 262, in test_f4_valid_fixture_still_loads
+    fixture = self._load_mutated(lambda raw: None)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 222, in _load_mutated
+    raw = json.loads(FIXTURE.read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f5_complete_envelope_still_verifies (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_complete_envelope_still_verifies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 271, in setUp
+    card = load_fixture(FIXTURE)["task_card"]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f5_incomplete_envelope_fails (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_incomplete_envelope_fails)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 271, in setUp
+    card = load_fixture(FIXTURE)["task_card"]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f5_invalid_timestamp_fails (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_invalid_timestamp_fails)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 271, in setUp
+    card = load_fixture(FIXTURE)["task_card"]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_f5_wrong_algorithm_fails (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_wrong_algorithm_fails)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_audit_fixes.py", line 271, in setUp
+    card = load_fixture(FIXTURE)["task_card"]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_fixture_refuses_unlabeled_data (test_end_to_end.TestEndToEnd.test_fixture_refuses_unlabeled_data)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_end_to_end.py", line 50, in test_fixture_refuses_unlabeled_data
+    raw = json.loads(FIXTURE.read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_full_pipeline_over_fixtures (test_end_to_end.TestEndToEnd.test_full_pipeline_over_fixtures)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_end_to_end.py", line 21, in test_full_pipeline_over_fixtures
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_clean_run_produces_zero_flags (test_graders.TestCleanRun.test_clean_run_produces_zero_flags)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_missing_elements_flagged_with_receipts (test_graders.TestCompleteness.test_missing_elements_flagged_with_receipts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_planted_formatting_variant_flag_exists (test_graders.TestCompleteness.test_planted_formatting_variant_flag_exists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_cost_per_verified_fact_arithmetic (test_graders.TestCostTruth.test_cost_per_verified_fact_arithmetic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_over_bound_spend_is_flagged (test_graders.TestCostTruth.test_over_bound_spend_is_flagged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_403_delivered_as_document_is_caught (test_graders.TestFetchTruth.test_403_delivered_as_document_is_caught)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_block_page_under_200_is_caught_by_shape (test_graders.TestFetchTruth.test_block_page_under_200_is_caught_by_shape)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_unrelied_fetch_is_not_flagged (test_graders.TestFetchTruth.test_unrelied_fetch_is_not_flagged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_fresh_cache_passes (test_graders.TestFreshness.test_fresh_cache_passes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_seven_hour_cache_against_one_hour_bound_is_caught (test_graders.TestFreshness.test_seven_hour_cache_against_one_hour_bound_is_caught)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_graders.py", line 24, in setUp
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_fixture_demonstration_numbers (test_precision.TestPrecision.test_fixture_demonstration_numbers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_precision.py", line 54, in test_fixture_demonstration_numbers
+    fixture = load_fixture(FIXTURE)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_fresh_seal_verifies (test_sealing.TestSealing.test_fresh_seal_verifies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_sealing.py", line 18, in setUp
+    self.card = load_fixture(FIXTURE)["task_card"]
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_tampered_freshness_bound_detected (test_sealing.TestSealing.test_tampered_freshness_bound_detected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_sealing.py", line 18, in setUp
+    self.card = load_fixture(FIXTURE)["task_card"]
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_tampered_question_text_detected (test_sealing.TestSealing.test_tampered_question_text_detected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_sealing.py", line 18, in setUp
+    self.card = load_fixture(FIXTURE)["task_card"]
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_tampered_required_element_detected (test_sealing.TestSealing.test_tampered_required_element_detected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_sealing.py", line 18, in setUp
+    self.card = load_fixture(FIXTURE)["task_card"]
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+======================================================================
+ERROR: test_tampered_seal_value_detected (test_sealing.TestSealing.test_tampered_seal_value_detected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/tests/test_sealing.py", line 18, in setUp
+    self.card = load_fixture(FIXTURE)["task_card"]
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/scoring/capture.py", line 129, in load_fixture
+    raw = json.loads(Path(path).read_text(encoding="utf-8"))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/carrie/.pyenv/versions/3.12.7/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/carrie/.codex/.chatgpt-projects/g-p-6a89b2d190608191aa7848c0b674ed05/scoring-session2-input/scoring-session2/scoring-layer/fixtures/synthetic_firecrawl.json'
+
+----------------------------------------------------------------------
+Ran 49 tests in 0.025s
+
+FAILED (errors=35)

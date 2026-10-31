@@ -1,0 +1,54 @@
+test_f1_append_to_old_format_chain_refused (test_audit_fixes.TestF1HashCoverage.test_f1_append_to_old_format_chain_refused) ... ok
+test_f1_old_format_chain_rejected_not_misverified (test_audit_fixes.TestF1HashCoverage.test_f1_old_format_chain_rejected_not_misverified) ... ok
+test_f1_seq_tamper_breaks_verify (test_audit_fixes.TestF1HashCoverage.test_f1_seq_tamper_breaks_verify) ... ok
+test_f1_timestamp_tamper_breaks_verify (test_audit_fixes.TestF1HashCoverage.test_f1_timestamp_tamper_breaks_verify) ... ok
+test_f1_type_tamper_breaks_verify (test_audit_fixes.TestF1HashCoverage.test_f1_type_tamper_breaks_verify) ... ok
+test_f2_precision_demo_good_chain_still_scores (test_audit_fixes.TestF2VerifyBeforeScore.test_f2_precision_demo_good_chain_still_scores) ... ok
+test_f2_precision_refuses_bad_chain (test_audit_fixes.TestF2VerifyBeforeScore.test_f2_precision_refuses_bad_chain) ... ok
+test_f2_verify_command_names_old_format (test_audit_fixes.TestF2VerifyBeforeScore.test_f2_verify_command_names_old_format) ... ok
+test_f3_duplicate_decision_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_duplicate_decision_rejected) ... ok
+test_f3_fixture_decisions_still_valid (test_audit_fixes.TestF3DecisionValidation.test_f3_fixture_decisions_still_valid) ... ok
+test_f3_missing_flag_id_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_missing_flag_id_rejected) ... ok
+test_f3_orphan_decision_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_orphan_decision_rejected) ... ok
+test_f3_wrong_grader_rejected (test_audit_fixes.TestF3DecisionValidation.test_f3_wrong_grader_rejected) ... ok
+test_f4_missing_spend_rejected (test_audit_fixes.TestF4SpendValidation.test_f4_missing_spend_rejected) ... ok
+test_f4_missing_tokens_rejected (test_audit_fixes.TestF4SpendValidation.test_f4_missing_tokens_rejected) ... ok
+test_f4_negative_spend_cannot_cancel_overspend (test_audit_fixes.TestF4SpendValidation.test_f4_negative_spend_cannot_cancel_overspend) ... ok
+test_f4_non_numeric_spend_rejected (test_audit_fixes.TestF4SpendValidation.test_f4_non_numeric_spend_rejected) ... ok
+test_f4_valid_fixture_still_loads (test_audit_fixes.TestF4SpendValidation.test_f4_valid_fixture_still_loads) ... ok
+test_f5_complete_envelope_still_verifies (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_complete_envelope_still_verifies) ... ok
+test_f5_incomplete_envelope_fails (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_incomplete_envelope_fails) ... ok
+test_f5_invalid_timestamp_fails (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_invalid_timestamp_fails) ... ok
+test_f5_wrong_algorithm_fails (test_audit_fixes.TestF5EnvelopeCompleteness.test_f5_wrong_algorithm_fails) ... ok
+test_f6_precision_lists_decision_receipts (test_audit_fixes.TestF6DecisionReceipts.test_f6_precision_lists_decision_receipts) ... ok
+test_append_and_verify (test_chain.TestChain.test_append_and_verify) ... ok
+test_empty_chain_verifies (test_chain.TestChain.test_empty_chain_verifies) ... ok
+test_tampered_payload_is_detected (test_chain.TestChain.test_tampered_payload_is_detected) ... ok
+test_unknown_record_type_refused (test_chain.TestChain.test_unknown_record_type_refused) ... ok
+test_fixture_refuses_unlabeled_data (test_end_to_end.TestEndToEnd.test_fixture_refuses_unlabeled_data) ... ok
+test_full_pipeline_over_fixtures (test_end_to_end.TestEndToEnd.test_full_pipeline_over_fixtures) ... ok
+test_clean_run_produces_zero_flags (test_graders.TestCleanRun.test_clean_run_produces_zero_flags) ... ok
+test_missing_elements_flagged_with_receipts (test_graders.TestCompleteness.test_missing_elements_flagged_with_receipts) ... ok
+test_planted_formatting_variant_flag_exists (test_graders.TestCompleteness.test_planted_formatting_variant_flag_exists) ... ok
+test_cost_per_verified_fact_arithmetic (test_graders.TestCostTruth.test_cost_per_verified_fact_arithmetic) ... ok
+test_over_bound_spend_is_flagged (test_graders.TestCostTruth.test_over_bound_spend_is_flagged) ... ok
+test_403_delivered_as_document_is_caught (test_graders.TestFetchTruth.test_403_delivered_as_document_is_caught) ... ok
+test_block_page_under_200_is_caught_by_shape (test_graders.TestFetchTruth.test_block_page_under_200_is_caught_by_shape) ... ok
+test_unrelied_fetch_is_not_flagged (test_graders.TestFetchTruth.test_unrelied_fetch_is_not_flagged) ... ok
+test_fresh_cache_passes (test_graders.TestFreshness.test_fresh_cache_passes) ... ok
+test_seven_hour_cache_against_one_hour_bound_is_caught (test_graders.TestFreshness.test_seven_hour_cache_against_one_hour_bound_is_caught) ... ok
+test_fixture_demonstration_numbers (test_precision.TestPrecision.test_fixture_demonstration_numbers) ... ok
+test_known_confirm_kill_set (test_precision.TestPrecision.test_known_confirm_kill_set) ... ok
+test_no_decisions_is_unverified_not_perfect (test_precision.TestPrecision.test_no_decisions_is_unverified_not_perfect) ... ok
+test_pending_flags_counted_from_flag_list (test_precision.TestPrecision.test_pending_flags_counted_from_flag_list) ... ok
+test_unknown_decision_refused (test_precision.TestPrecision.test_unknown_decision_refused) ... ok
+test_fresh_seal_verifies (test_sealing.TestSealing.test_fresh_seal_verifies) ... ok
+test_tampered_freshness_bound_detected (test_sealing.TestSealing.test_tampered_freshness_bound_detected) ... ok
+test_tampered_question_text_detected (test_sealing.TestSealing.test_tampered_question_text_detected) ... ok
+test_tampered_required_element_detected (test_sealing.TestSealing.test_tampered_required_element_detected) ... ok
+test_tampered_seal_value_detected (test_sealing.TestSealing.test_tampered_seal_value_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 0.051s
+
+OK
