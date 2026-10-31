@@ -1,0 +1,61 @@
+{
+  "expected": "First supported; following uncited claim unsupported",
+  "observed": [
+    {
+      "absence": null,
+      "answer_sha256": "3507b8adb30ac247fbd3187492ae91090f275096f6b36649813e94e74c7e3ad4",
+      "answer_span": {
+        "end": 36,
+        "start": 0
+      },
+      "binding_errors": [],
+      "bound_fetch_indices": [
+        0
+      ],
+      "citations": [
+        {
+          "reference": "[1]",
+          "url": "https://widgetforge.invalid/pricing"
+        }
+      ],
+      "claim_id": "run-synthetic-session2:claim:1",
+      "context_prefix": "",
+      "method": "DETERMINISTIC",
+      "needs_judge": false,
+      "normalized_claim": "WidgetForge Pro costs $49 per month",
+      "passages": [
+        {
+          "document_sha256": "e5940e9a62b09266aecace6c9c42107069c52e27a8eccc39a4421fe850cecdc3",
+          "end": 36,
+          "fetch_index": 0,
+          "start": 0,
+          "text": "WidgetForge Pro costs $49 per month.",
+          "url": "https://widgetforge.invalid/pricing"
+        }
+      ],
+      "reason": "Complete statement or narrow subject/relation/value assertion matches a cited captured passage.",
+      "text": "WidgetForge Pro costs $49 per month.",
+      "verdict": "SUPPORTED"
+    },
+    {
+      "absence": "No cited evidence; no URL inferred from question assignment or relied_on.",
+      "answer_sha256": "3507b8adb30ac247fbd3187492ae91090f275096f6b36649813e94e74c7e3ad4",
+      "answer_span": {
+        "end": 90,
+        "start": 41
+      },
+      "binding_errors": [],
+      "bound_fetch_indices": [],
+      "citations": [],
+      "claim_id": "run-synthetic-session2:claim:2",
+      "context_prefix": "",
+      "method": "DETERMINISTIC",
+      "needs_judge": false,
+      "normalized_claim": "WidgetForge Pro includes 1200 requests per month",
+      "passages": [],
+      "reason": "No citation supplied for this claim.",
+      "text": "WidgetForge Pro includes 1200 requests per month.",
+      "verdict": "UNSUPPORTED"
+    }
+  ]
+}
