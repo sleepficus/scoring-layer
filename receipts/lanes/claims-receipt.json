@@ -1,0 +1,16 @@
+{
+  "lane": "claims",
+  "builder": "/root/claims",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning": "ultra",
+  "status": "BUILT_TESTED_SELF_REVIEWED_AWAITING_INDEPENDENT_AUDIT",
+  "test_command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest tests.test_claims -v",
+  "tests": 32,
+  "test_exit_code": 0,
+  "files": {
+    "scoring/claims.py": "9179ae9eea4c913872758b7ca25381f2de9117e92f3c936f0f64543004596b7d",
+    "tests/test_claims.py": "7f130c49c410f2899073bafae464dd215c525c6d07513b4d3ffa5d1001a23fae"
+  },
+  "network_or_paid_model_calls": 0,
+  "questions_for_stephen": []
+}
